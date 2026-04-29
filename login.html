@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đăng nhập tài khoản Du Lịch Muôn Nơi">
+    <title>Đăng Nhập - Du Lịch Muôn Nơi</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===== TOP HEADER ===== -->
+    <header class="top-header">
+        <div class="container top-header__inner">
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/paint-palette.png" alt="Logo" class="logo__icon">
+                <span class="logo__text">Dấu Chân Việt</span>
+                <img src="https://img.icons8.com/color/24/paint-brush.png" alt="" class="logo__brush">
+            </div>
+            <div class="hotline">
+                <div class="hotline__icon-wrap">
+                    <i class="fas fa-phone-alt hotline__icon"></i>
+                </div>
+                <div class="hotline__info">
+                    <span class="hotline__number">Phone: 0336705749</span>
+                    <span class="hotline__sub">Gọi để được tư vấn ngay</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav__list" id="navList">
+                <li class="nav__item"><a href="index.html" class="nav__link">TRANG CHỦ</a></li>
+                <li class="nav__item nav__item--dropdown">
+                    <a href="hotels.html" class="nav__link">KHÁCH SẠN <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="hotels.html#3sao">Khách sạn 3 sao</a></li>
+                        <li><a href="hotels.html#4sao">Khách sạn 4 sao</a></li>
+                        <li><a href="hotels.html#5sao">Khách sạn 5 sao</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="domestic.html" class="nav__link">DU LỊCH TRONG NƯỚC</a></li>
+                <li class="nav__item"><a href="international.html" class="nav__link">DU LỊCH NƯỚC NGOÀI</a></li>
+                <li class="nav__item"><a href="policy.html" class="nav__link">CHÍNH SÁCH CHUNG</a></li>
+                <li class="nav__item"><a href="tips.html" class="nav__link">KINH NGHIỆM DU LỊCH</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== LOGIN SECTION ===== -->
+    <section class="login-section" id="login">
+        <div class="login-bg">
+            <div class="login-bg__pattern"></div>
+        </div>
+        <div class="container">
+            <div class="login-wrapper">
+                <!-- Left: Welcome -->
+                <div class="login-welcome">
+                    <div class="login-welcome__content">
+                        <h1 class="login-welcome__title">Chào mừng trở lại!</h1>
+                        <p class="login-welcome__subtitle">Đăng nhập để khám phá hàng nghìn tour du lịch hấp dẫn và nhận
+                            ưu đãi độc quyền dành cho thành viên.</p>
+
+                        <div class="login-features">
+                            <div class="login-feature">
+                                <i class="fas fa-plane"></i>
+                                <span>1000+ Tour mỗi tháng</span>
+                            </div>
+                            <div class="login-feature">
+                                <i class="fas fa-tags"></i>
+                                <span>Ưu đãi đến 30%</span>
+                            </div>
+                            <div class="login-feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Bảo hiểm toàn diện</span>
+                            </div>
+                        </div>
+
+                        <div class="login-welcome__cta">
+                            <p>Chưa có tài khoản?</p>
+                            <a href="register.html" class="login-welcome__register-btn">
+                                <i class="fas fa-user-plus"></i> Đăng ký miễn phí
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Login Form -->
+                <div class="login-form-card">
+                    <div class="login-form-card__header">
+                        <div class="login-form-card__icon">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </div>
+                        <h2>Đăng Nhập</h2>
+                        <p>Nhập thông tin tài khoản của bạn</p>
+                    </div>
+
+                    <form class="login-form" id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail" class="form-label">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" id="loginEmail" class="form-input" placeholder="example@email.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="loginPassword" class="form-label">
+                                <i class="fas fa-lock"></i> Mật khẩu
+                            </label>
+                            <div class="form-input-wrapper">
+                                <input type="password" id="loginPassword" class="form-input" placeholder="Nhập mật khẩu"
+                                    required>
+                                <button type="button" class="form-toggle-password" id="toggleLoginPassword"
+                                    aria-label="Hiện mật khẩu">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="login-options">
+                            <label class="login-remember">
+                                <input type="checkbox" id="rememberMe">
+                                <span>Ghi nhớ đăng nhập</span>
+                            </label>
+                            <a href="#" class="form-link" id="forgotPasswordLink">Quên mật khẩu?</a>
+                        </div>
+
+                        <button type="submit" class="form-submit" id="submitLogin">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Đăng Nhập</span>
+                        </button>
+
+                        <div class="form-divider">
+                            <span>Hoặc đăng nhập bằng</span>
+                        </div>
+
+                        <div class="form-social">
+                            <button type="button" class="form-social__btn form-social__btn--google">
+                                <i class="fab fa-google"></i>
+                                <span>Google</span>
+                            </button>
+                            <button type="button" class="form-social__btn form-social__btn--facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </button>
+                        </div>
+
+                        <p class="form-footer-text">
+                            Chưa có tài khoản? <a href="register.html" class="form-link">Đăng ký ngay</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+                <p class="footer__text">Dấu Chân Việt chuyên cung cấp các tour du lịch trong nước và nước ngoài
+                    với chất lượng dịch vụ tốt nhất và giá cả hợp lý nhất.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">LIÊN KẾT NHANH</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Tour trong nước</a></li>
+                    <li><a href="#">Tour nước ngoài</a></li>
+                    <li><a href="#">Kinh nghiệm du lịch</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">THÔNG TIN LIÊN HỆ</h3>
+                <ul class="footer__contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường Nguyễn Trãi, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone-alt"></i> 0336705749</li>
+                    <li><i class="fas fa-envelope"></i> anhvtlpk04697@gmail.com</li>
+                    <li><i class="far fa-clock"></i> T2 - T7: 8:00 - 17:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Dấu Chân Việt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        // Redirect if already logged in
+        if (Auth.isLoggedIn()) {
+            window.location.href = 'profile.html';
+        }
+
+        // Toggle password
+        const toggleBtn = document.getElementById('toggleLoginPassword');
+        const passInput = document.getElementById('loginPassword');
+        if (toggleBtn && passInput) {
+            toggleBtn.addEventListener('click', () => {
+                passInput.type = passInput.type === 'password' ? 'text' : 'password';
+                const icon = toggleBtn.querySelector('i');
+                icon.classList.toggle('fa-eye');
+                icon.classList.toggle('fa-eye-slash');
+            });
+        }
+
+        // Login form
+        const loginForm = document.getElementById('loginForm');
+        if (loginForm) {
+            loginForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const email = document.getElementById('loginEmail').value;
+                const password = document.getElementById('loginPassword').value;
+
+                const btn = document.getElementById('submitLogin');
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Đang đăng nhập...</span>';
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    const result = Auth.login(email, password);
+
+                    if (result.success) {
+                        btn.innerHTML = '<i class="fas fa-check"></i> <span>Thành công!</span>';
+                        btn.style.background = 'linear-gradient(135deg, #4caf50, #2e7d32)';
+                        showAuthNotification('Đăng nhập thành công! Chào mừng bạn trở lại 🎉', 'success');
+
+                        setTimeout(() => {
+                            window.location.href = 'profile.html';
+                        }, 1200);
+                    } else {
+                        btn.innerHTML = '<i class="fas fa-sign-in-alt"></i> <span>Đăng Nhập</span>';
+                        btn.disabled = false;
+                        showAuthNotification(result.message, 'error');
+                    }
+                }, 1000);
+            });
+        }
+
+        // Forgot password modal
+        const forgotLink = document.getElementById('forgotPasswordLink');
+        if (forgotLink) {
+            forgotLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                showAuthNotification('Tính năng đặt lại mật khẩu sẽ được cập nhật sớm!', 'success');
+            });
+        }
+
+        // Focus effects
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.closest('.form-group')?.classList.add('focused');
+            });
+            input.addEventListener('blur', () => {
+                input.closest('.form-group')?.classList.remove('focused');
+            });
+        });
+    </script>
+</body>
+
+</html>

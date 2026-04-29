@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khách sạn cao cấp - Du Lịch Muôn Nơi - Đặt phòng khách sạn 3-5 sao giá tốt">
+    <title>Khách Sạn - Du Lịch Muôn Nơi</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===== TOP HEADER ===== -->
+    <header class="top-header">
+        <div class="container top-header__inner">
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/paint-palette.png" alt="Logo" class="logo__icon">
+                <span class="logo__text">Dấu Chân Việt</span>
+                <img src="https://img.icons8.com/color/24/paint-brush.png" alt="" class="logo__brush">
+            </div>
+            <div class="hotline">
+                <div class="hotline__icon-wrap"><i class="fas fa-phone-alt hotline__icon"></i></div>
+                <div class="hotline__info">
+                    <span class="hotline__number">Phone: 0336705749</span>
+                    <span class="hotline__sub">Gọi để được tư vấn ngay</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav__list" id="navList">
+                <li class="nav__item"><a href="index.html" class="nav__link">TRANG CHỦ</a></li>
+                <li class="nav__item nav__item--dropdown">
+                    <a href="hotels.html" class="nav__link nav__link--active">KHÁCH SẠN <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="hotels.html#3sao">Khách sạn 3 sao</a></li>
+                        <li><a href="hotels.html#4sao">Khách sạn 4 sao</a></li>
+                        <li><a href="hotels.html#5sao">Khách sạn 5 sao</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="domestic.html" class="nav__link">DU LỊCH TRONG NƯỚC</a></li>
+                <li class="nav__item"><a href="international.html" class="nav__link">DU LỊCH NƯỚC NGOÀI</a></li>
+                <li class="nav__item"><a href="policy.html" class="nav__link">CHÍNH SÁCH CHUNG</a></li>
+                <li class="nav__item"><a href="tips.html" class="nav__link">KINH NGHIỆM DU LỊCH</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE BANNER ===== -->
+    <section class="page-banner">
+        <div class="page-banner__overlay"></div>
+        <div class="page-banner__content">
+            <h1 class="page-banner__title">Khách Sạn Cao Cấp</h1>
+            <p class="page-banner__breadcrumb">
+                <a href="index.html">Trang chủ</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Khách sạn</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== HOTEL FILTER ===== -->
+    <section class="content-section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="3sao">3 Sao</button>
+                <button class="filter-btn" data-filter="4sao">4 Sao</button>
+                <button class="filter-btn" data-filter="5sao">5 Sao</button>
+            </div>
+
+            <div class="card-grid" id="hotelGrid">
+                <!-- 3 sao -->
+                <div class="content-card" data-category="3sao" id="3sao">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=280&fit=crop"
+                            alt="Khách sạn Á Đông" class="content-card__img">
+                        <div class="content-card__badge content-card__badge--blue">3 ★</div>
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Khách Sạn Á Đông</h3>
+                        <p class="content-card__meta"><i class="fas fa-map-marker-alt"></i> Quận 1, TP.HCM</p>
+                        <div class="content-card__rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i>
+                            <span>(126 đánh giá)</span>
+                        </div>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">450.000đ<small>/đêm</small></span>
+                            <a href="hotel-detail.html?id=a-dong" class="content-card__btn">Đặt phòng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card" data-category="3sao">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&h=280&fit=crop"
+                            alt="Khách sạn Hoa Sen" class="content-card__img">
+                        <div class="content-card__badge content-card__badge--blue">3 ★</div>
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Khách Sạn Hoa Sen</h3>
+                        <p class="content-card__meta"><i class="fas fa-map-marker-alt"></i> Quận 3, TP.HCM</p>
+                        <div class="content-card__rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i>
+                            <span>(89 đánh giá)</span>
+                        </div>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">520.000đ<small>/đêm</small></span>
+                            <a href="hotel-detail.html?id=hoa-sen" class="content-card__btn">Đặt phòng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 sao -->
+                <div class="content-card" data-category="4sao" id="4sao">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=280&fit=crop"
+                            alt="Khách sạn Mường Thanh" class="content-card__img">
+                        <div class="content-card__badge content-card__badge--gold">4 ★</div>
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Mường Thanh Luxury</h3>
+                        <p class="content-card__meta"><i class="fas fa-map-marker-alt"></i> Đà Nẵng</p>
+                        <div class="content-card__rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span>(235 đánh giá)</span>
+                        </div>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">1.200.000đ<small>/đêm</small></span>
+                            <a href="hotel-detail.html?id=muong-thanh" class="content-card__btn">Đặt phòng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card" data-category="4sao">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=280&fit=crop"
+                            alt="Khách sạn Liberty" class="content-card__img">
+                        <div class="content-card__badge content-card__badge--gold">4 ★</div>
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Liberty Central Saigon</h3>
+                        <p class="content-card__meta"><i class="fas fa-map-marker-alt"></i> Quận 1, TP.HCM</p>
+                        <div class="content-card__rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span>(312 đánh giá)</span>
+                        </div>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">1.500.000đ<small>/đêm</small></span>
+                            <a href="hotel-detail.html?id=liberty" class="content-card__btn">Đặt phòng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 sao -->
+                <div class="content-card" data-category="5sao" id="5sao">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=280&fit=crop"
+                            alt="Vinpearl Resort" class="content-card__img">
+                        <div class="content-card__badge content-card__badge--red">5 ★</div>
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Vinpearl Resort & Spa</h3>
+                        <p class="content-card__meta"><i class="fas fa-map-marker-alt"></i> Nha Trang</p>
+                        <div class="content-card__rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(520 đánh giá)</span>
+                        </div>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">3.200.000đ<small>/đêm</small></span>
+                            <a href="hotel-detail.html?id=vinpearl" class="content-card__btn">Đặt phòng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card" data-category="5sao">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=400&h=280&fit=crop"
+                            alt="InterContinental" class="content-card__img">
+                        <div class="content-card__badge content-card__badge--red">5 ★</div>
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">InterContinental Đà Nẵng</h3>
+                        <p class="content-card__meta"><i class="fas fa-map-marker-alt"></i> Đà Nẵng</p>
+                        <div class="content-card__rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(687 đánh giá)</span>
+                        </div>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">4.500.000đ<small>/đêm</small></span>
+                            <a href="hotel-detail.html?id=intercontinental" class="content-card__btn">Đặt phòng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+                <p class="footer__text">Dấu chân Việt chuyên cung cấp các tour du lịch trong nước và nước ngoài
+                    với chất lượng dịch vụ tốt nhất.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">LIÊN KẾT NHANH</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="domestic.html">Tour trong nước</a></li>
+                    <li><a href="international.html">Tour nước ngoài</a></li>
+                    <li><a href="tips.html">Kinh nghiệm du lịch</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">THÔNG TIN LIÊN HỆ</h3>
+                <ul class="footer__contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường Nguyễn Trãi, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone-alt"></i> 0336705749</li>
+                    <li><i class="fas fa-envelope"></i> anhvtlpk04697@gmail.com</li>
+                    <li><i class="far fa-clock"></i> T2 - T7: 8:00 - 17:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Dấu Chân Việt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        // Filter hotels
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.content-card').forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = '';
+                        card.style.animation = 'fadeInUp 0.4s ease';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

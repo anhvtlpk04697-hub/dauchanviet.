@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chi tiết khách sạn - Dấu Chân Việt">
+    <title>Chi Tiết Khách Sạn - Dấu Chân Việt</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="container top-header__inner">
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/paint-palette.png" alt="Logo" class="logo__icon">
+                <span class="logo__text">Dấu Chân Việt</span>
+                <img src="https://img.icons8.com/color/24/paint-brush.png" alt="" class="logo__brush">
+            </div>
+            <div class="hotline">
+                <div class="hotline__icon-wrap"><i class="fas fa-phone-alt hotline__icon"></i></div>
+                <div class="hotline__info"><span class="hotline__number">Phone: 0336705749</span><span
+                        class="hotline__sub">Gọi để được tư vấn ngay</span></div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav__list" id="navList">
+                <li class="nav__item"><a href="index.html" class="nav__link">TRANG CHỦ</a></li>
+                <li class="nav__item nav__item--dropdown">
+                    <a href="hotels.html" class="nav__link nav__link--active">KHÁCH SẠN <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="hotels.html#3sao">Khách sạn 3 sao</a></li>
+                        <li><a href="hotels.html#4sao">Khách sạn 4 sao</a></li>
+                        <li><a href="hotels.html#5sao">Khách sạn 5 sao</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="domestic.html" class="nav__link">DU LỊCH TRONG NƯỚC</a></li>
+                <li class="nav__item"><a href="international.html" class="nav__link">DU LỊCH NƯỚC NGOÀI</a></li>
+                <li class="nav__item"><a href="policy.html" class="nav__link">CHÍNH SÁCH CHUNG</a></li>
+                <li class="nav__item"><a href="tips.html" class="nav__link">KINH NGHIỆM DU LỊCH</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <div class="page-banner__overlay"></div>
+        <div class="page-banner__content">
+            <h1 class="page-banner__title" id="bannerTitle">Chi Tiết Khách Sạn</h1>
+            <p class="page-banner__breadcrumb">
+                <a href="index.html">Trang chủ</a><i class="fas fa-chevron-right"></i>
+                <a href="hotels.html">Khách sạn</a><i class="fas fa-chevron-right"></i>
+                <span id="breadcrumbName">Chi tiết</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <div class="container">
+            <div class="detail-layout" id="detailContent"></div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+                <p class="footer__text">Dấu Chân Việt chuyên cung cấp các tour du lịch trong nước và nước ngoài với chất
+                    lượng dịch vụ tốt nhất.</p>
+                <div class="footer__social"><a href="#" class="footer__social-link"><i
+                            class="fab fa-facebook-f"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-instagram"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-youtube"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-twitter"></i></a></div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">LIÊN KẾT NHANH</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="domestic.html">Tour trong nước</a></li>
+                    <li><a href="international.html">Tour nước ngoài</a></li>
+                    <li><a href="tips.html">Kinh nghiệm du lịch</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">THÔNG TIN LIÊN HỆ</h3>
+                <ul class="footer__contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường Nguyễn Trãi, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone-alt"></i> 0336705749</li>
+                    <li><i class="fas fa-envelope"></i> anhvtlpk04697@gmail.com</li>
+                    <li><i class="far fa-clock"></i> T2 - T7: 8:00 - 17:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Dấu Chân Việt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="tour-data.js"></script>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const hotelId = params.get('id');
+        const hotel = HOTEL_DATA[hotelId];
+
+        if (!hotel) {
+            document.getElementById('detailContent').innerHTML = `
+                <div style="text-align:center;padding:60px 20px;">
+                    <i class="fas fa-exclamation-triangle" style="font-size:60px;color:var(--color-accent);margin-bottom:20px;"></i>
+                    <h2>Khách sạn không tồn tại</h2>
+                    <p style="margin:15px 0 30px;color:var(--color-gray);">Khách sạn bạn tìm kiếm không có trong hệ thống.</p>
+                    <a href="hotels.html" class="tour-card__btn" style="padding:12px 30px;font-size:16px;">Xem tất cả khách sạn</a>
+                </div>`;
+        } else {
+            document.title = hotel.name + ' - Dấu Chân Việt';
+            document.getElementById('bannerTitle').textContent = hotel.name;
+            document.getElementById('breadcrumbName').textContent = hotel.name;
+
+            const starsHTML = '★'.repeat(hotel.stars) + '☆'.repeat(5 - hotel.stars);
+
+            document.getElementById('detailContent').innerHTML = `
+                <div class="detail-main">
+                    <!-- Gallery -->
+                    <div class="detail-gallery">
+                        <div class="detail-gallery__main">
+                            <img src="${hotel.image}" alt="${hotel.name}" id="mainImage">
+                            <div class="detail-gallery__badge">${hotel.stars} ★</div>
+                        </div>
+                        <div class="detail-gallery__thumbs">
+                            ${hotel.gallery.map((img, i) => `
+                                <img src="${img}" alt="Ảnh ${i + 1}" class="detail-gallery__thumb ${i === 0 ? 'active' : ''}" onclick="changeImage(this, '${img}')">
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="detail-block">
+                        <h2 class="detail-block__title"><i class="fas fa-hotel"></i> Giới thiệu khách sạn</h2>
+                        <div class="detail-block__content">${hotel.description}</div>
+                    </div>
+
+                    <!-- Amenities -->
+                    <div class="detail-block">
+                        <h2 class="detail-block__title"><i class="fas fa-concierge-bell"></i> Tiện nghi</h2>
+                        <div class="detail-highlights">
+                            ${hotel.amenities.map(a => `<span class="detail-highlight-tag"><i class="fas fa-check-circle"></i> ${a}</span>`).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Room Types -->
+                    <div class="detail-block">
+                        <h2 class="detail-block__title"><i class="fas fa-bed"></i> Loại phòng</h2>
+                        <div class="room-types">
+                            ${hotel.roomTypes.map(room => `
+                                <div class="room-card">
+                                    <div class="room-card__img">
+                                        <img src="${room.image}" alt="${room.name}">
+                                    </div>
+                                    <div class="room-card__info">
+                                        <h4>${room.name}</h4>
+                                        <p><i class="fas fa-expand-arrows-alt"></i> ${room.size}</p>
+                                        <p><i class="fas fa-bed"></i> ${room.beds}</p>
+                                    </div>
+                                    <div class="room-card__action">
+                                        <span class="room-card__price">${formatPrice(room.price)}<small>/đêm</small></span>
+                                        <a href="checkout.html?type=hotel&id=${hotel.id}&room=${encodeURIComponent(room.name)}&price=${room.price}" class="room-card__btn">Đặt phòng</a>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Policies -->
+                    <div class="detail-block">
+                        <h2 class="detail-block__title"><i class="fas fa-clipboard-list"></i> Chính sách</h2>
+                        <ul class="detail-policies">
+                            ${hotel.policies.map(p => `<li><i class="fas fa-info-circle"></i> ${p}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SIDEBAR -->
+                <div class="detail-sidebar">
+                    <div class="detail-price-card">
+                        <div class="detail-price-card__header">
+                            <span class="detail-price-card__label">Giá từ</span>
+                            ${hotel.priceOld ? `<span class="detail-price-card__old">${formatPrice(hotel.priceOld)}</span>` : ''}
+                            <span class="detail-price-card__current">${formatPrice(hotel.price)}</span>
+                            <span class="detail-price-card__per">/đêm</span>
+                        </div>
+                        <div class="detail-price-card__info">
+                            <div class="detail-price-card__row"><i class="fas fa-star"></i><span>${starsHTML} (${hotel.stars} sao)</span></div>
+                            <div class="detail-price-card__row"><i class="fas fa-map-marker-alt"></i><span>${hotel.location}</span></div>
+                        </div>
+                        <div class="detail-price-card__rating">
+                            <div class="stars">${renderStars(hotel.rating)}</div>
+                            <span>${hotel.rating}/5 (${hotel.reviews} đánh giá)</span>
+                        </div>
+                        <a href="checkout.html?type=hotel&id=${hotel.id}&room=${encodeURIComponent(hotel.roomTypes[0].name)}&price=${hotel.roomTypes[0].price}" class="detail-price-card__btn">
+                            <i class="fas fa-calendar-check"></i> ĐẶT PHÒNG NGAY
+                        </a>
+                        <div class="detail-price-card__hotline">
+                            <i class="fas fa-headset"></i>
+                            <div><small>Tư vấn miễn phí</small><strong>0999 000 000</strong></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function changeImage(thumb, src) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.detail-gallery__thumb').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

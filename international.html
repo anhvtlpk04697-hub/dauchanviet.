@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tour du lịch nước ngoài - Khám phá thế giới cùng Du Lịch Muôn Nơi">
+    <title>Du Lịch Nước Ngoài - Du Lịch Muôn Nơi</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="container top-header__inner">
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/paint-palette.png" alt="Logo" class="logo__icon">
+                <span class="logo__text">Dấu Chân Việt</span>
+                <img src="https://img.icons8.com/color/24/paint-brush.png" alt="" class="logo__brush">
+            </div>
+            <div class="hotline">
+                <div class="hotline__icon-wrap"><i class="fas fa-phone-alt hotline__icon"></i></div>
+                <div class="hotline__info"><span class="hotline__number">Phone: 0336705749</span><span
+                        class="hotline__sub">Gọi để được tư vấn ngay</span></div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav__list" id="navList">
+                <li class="nav__item"><a href="index.html" class="nav__link">TRANG CHỦ</a></li>
+                <li class="nav__item nav__item--dropdown"><a href="hotels.html" class="nav__link">KHÁCH SẠN <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="hotels.html#3sao">Khách sạn 3 sao</a></li>
+                        <li><a href="hotels.html#4sao">Khách sạn 4 sao</a></li>
+                        <li><a href="hotels.html#5sao">Khách sạn 5 sao</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="domestic.html" class="nav__link">DU LỊCH TRONG NƯỚC</a></li>
+                <li class="nav__item"><a href="international.html" class="nav__link nav__link--active">DU LỊCH NƯỚC
+                        NGOÀI</a></li>
+                <li class="nav__item"><a href="policy.html" class="nav__link">CHÍNH SÁCH CHUNG</a></li>
+                <li class="nav__item"><a href="tips.html" class="nav__link">KINH NGHIỆM DU LỊCH</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <div class="page-banner__overlay"></div>
+        <div class="page-banner__content">
+            <h1 class="page-banner__title">Du Lịch Nước Ngoài</h1>
+            <p class="page-banner__breadcrumb"><a href="index.html">Trang chủ</a><i
+                    class="fas fa-chevron-right"></i><span>Du lịch nước ngoài</span></p>
+        </div>
+    </section>
+
+    <!-- ===== DESTINATIONS ===== -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">ĐIỂM ĐẾN QUỐC TẾ</h2>
+            <div class="destinations-grid">
+                <a href="#" class="destination-card destination-card--large">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop"
+                        alt="Nhật Bản">
+                    <div class="destination-card__overlay">
+                        <h3>Nhật Bản</h3><span>15 tour</span>
+                    </div>
+                </a>
+                <a href="#" class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1550850839-8dc894ed385a?w=400&h=300&fit=crop"
+                        alt="Hàn Quốc">
+                    <div class="destination-card__overlay">
+                        <h3>Hàn Quốc</h3><span>12 tour</span>
+                    </div>
+                </a>
+                <a href="#" class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&h=300&fit=crop"
+                        alt="Pháp">
+                    <div class="destination-card__overlay">
+                        <h3>Pháp</h3><span>8 tour</span>
+                    </div>
+                </a>
+                <a href="#" class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=400&h=300&fit=crop"
+                        alt="Úc">
+                    <div class="destination-card__overlay">
+                        <h3>Úc</h3><span>6 tour</span>
+                    </div>
+                </a>
+                <a href="#" class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&h=300&fit=crop"
+                        alt="Singapore">
+                    <div class="destination-card__overlay">
+                        <h3>Singapore</h3><span>9 tour</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section content-section--alt">
+        <div class="container">
+            <h2 class="section-title">TOUR NƯỚC NGOÀI NỔI BẬT</h2>
+            <div class="card-grid">
+                <div class="content-card">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&h=280&fit=crop"
+                            alt="Tour Nhật Bản" class="content-card__img">
+                        <div class="content-card__badge content-card__badge--red">HOT</div>
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Tour Nhật Bản mùa hoa anh đào</h3>
+                        <p class="content-card__meta"><i class="far fa-clock"></i> 5 ngày 4 đêm</p>
+                        <p class="content-card__desc">Tokyo - Kyoto - Osaka. Ngắm hoa anh đào, trải nghiệm văn hóa Nhật.
+                        </p>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">25.990.000đ</span>
+                            <a href="tour-detail.html?id=nhat-ban" class="content-card__btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1550850839-8dc894ed385a?w=400&h=280&fit=crop"
+                            alt="Tour Hàn Quốc" class="content-card__img">
+                        <div class="content-card__badge content-card__badge--red">HOT</div>
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Tour Hàn Quốc 6N5D Seoul - Nami - Everland</h3>
+                        <p class="content-card__meta"><i class="far fa-clock"></i> 6 ngày 5 đêm</p>
+                        <p class="content-card__desc">Khám phá Seoul hiện đại, đảo Nami thơ mộng, công viên Everland.
+                        </p>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">18.500.000đ</span>
+                            <a href="tour-detail.html?id=han-quoc" class="content-card__btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&h=280&fit=crop"
+                            alt="Tour Châu Âu" class="content-card__img">
+                        <div class="content-card__badge content-card__badge--gold">PREMIUM</div>
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Tour Châu Âu 4 nước: Pháp - Ý - Thụy Sĩ - Đức</h3>
+                        <p class="content-card__meta"><i class="far fa-clock"></i> 10 ngày 9 đêm</p>
+                        <p class="content-card__desc">Hành trình xuyên Châu Âu, thăm tháp Eiffel, Colosseum, núi Alps.
+                        </p>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">67.990.000đ</span>
+                            <a href="tour-detail.html?id=chau-au" class="content-card__btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=400&h=280&fit=crop"
+                            alt="Tour Singapore" class="content-card__img">
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Tour Singapore - Malaysia 5N4D</h3>
+                        <p class="content-card__meta"><i class="far fa-clock"></i> 5 ngày 4 đêm</p>
+                        <p class="content-card__desc">Marina Bay, Universal Studios, Sentosa, Kuala Lumpur.</p>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">12.500.000đ</span>
+                            <a href="tour-detail.html?id=singapore" class="content-card__btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=400&h=280&fit=crop"
+                            alt="Tour Úc" class="content-card__img">
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Tour Úc - Sydney - Melbourne 7N6D</h3>
+                        <p class="content-card__meta"><i class="far fa-clock"></i> 7 ngày 6 đêm</p>
+                        <p class="content-card__desc">Nhà hát Opera, cầu cảng Sydney, Great Ocean Road.</p>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">42.000.000đ</span>
+                            <a href="tour-detail.html?id=uc" class="content-card__btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="content-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=400&h=280&fit=crop"
+                            alt="Tour Thái Lan" class="content-card__img">
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">Tour Thái Lan Bangkok - Pattaya 4N3D</h3>
+                        <p class="content-card__meta"><i class="far fa-clock"></i> 4 ngày 3 đêm</p>
+                        <p class="content-card__desc">Chùa Phật Vàng, Cung điện Hoàng gia, biển Pattaya.</p>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">6.990.000đ</span>
+                            <a href="tour-detail.html?id=thai-lan" class="content-card__btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+                <p class="footer__text">Dấu Chân Việt chuyên cung cấp các tour du lịch trong nước và nước ngoài với chất
+                    lượng dịch vụ tốt nhất.</p>
+                <div class="footer__social"><a href="#" class="footer__social-link"><i
+                            class="fab fa-facebook-f"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-instagram"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-youtube"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-twitter"></i></a></div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">LIÊN KẾT NHANH</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="domestic.html">Tour trong nước</a></li>
+                    <li><a href="international.html">Tour nước ngoài</a></li>
+                    <li><a href="tips.html">Kinh nghiệm du lịch</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">THÔNG TIN LIÊN HỆ</h3>
+                <ul class="footer__contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường Nguyễn Trãi, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone-alt"></i> 0336705749</li>
+                    <li><i class="fas fa-envelope"></i> anhvtlpk04697@gmail.com</li>
+                    <li><i class="far fa-clock"></i> T2 - T7: 8:00 - 17:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Dấu Chân Việt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>

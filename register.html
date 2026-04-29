@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đăng ký tài khoản Du Lịch Muôn Nơi - Nhận ưu đãi tour du lịch hấp dẫn">
+    <title>Đăng Ký - Dấu Chân Việt</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===== TOP HEADER ===== -->
+    <header class="top-header">
+        <div class="container top-header__inner">
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/paint-palette.png" alt="Logo" class="logo__icon">
+                <span class="logo__text">Dấu Chân Việt</span>
+                <img src="https://img.icons8.com/color/24/paint-brush.png" alt="" class="logo__brush">
+            </div>
+            <div class="hotline">
+                <div class="hotline__icon-wrap">
+                    <i class="fas fa-phone-alt hotline__icon"></i>
+                </div>
+                <div class="hotline__info">
+                    <span class="hotline__number">Phone: 0336705749</span>
+                    <span class="hotline__sub">Gọi để được tư vấn ngay</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav__list" id="navList">
+                <li class="nav__item"><a href="index.html" class="nav__link">TRANG CHỦ</a></li>
+                <li class="nav__item nav__item--dropdown">
+                    <a href="hotels.html" class="nav__link">KHÁCH SẠN <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="hotels.html#3sao">Khách sạn 3 sao</a></li>
+                        <li><a href="hotels.html#4sao">Khách sạn 4 sao</a></li>
+                        <li><a href="hotels.html#5sao">Khách sạn 5 sao</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="domestic.html" class="nav__link">DU LỊCH TRONG NƯỚC</a></li>
+                <li class="nav__item"><a href="international.html" class="nav__link">DU LỊCH NƯỚC NGOÀI</a></li>
+                <li class="nav__item"><a href="policy.html" class="nav__link">CHÍNH SÁCH CHUNG</a></li>
+                <li class="nav__item"><a href="tips.html" class="nav__link">KINH NGHIỆM DU LỊCH</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE BANNER ===== -->
+    <section class="page-banner">
+        <div class="page-banner__overlay"></div>
+        <div class="page-banner__content">
+            <h1 class="page-banner__title">Đăng Ký Tài Khoản</h1>
+            <p class="page-banner__breadcrumb">
+                <a href="index.html">Trang chủ</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Đăng ký</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== REGISTER SECTION ===== -->
+    <section class="register-section" id="register">
+        <div class="container">
+            <div class="register-wrapper">
+                <!-- Left: Benefits -->
+                <div class="register-benefits">
+                    <h2 class="register-benefits__title">Tại sao nên đăng ký?</h2>
+                    <p class="register-benefits__subtitle">Trở thành thành viên để nhận nhiều ưu đãi hấp dẫn</p>
+
+                    <div class="benefit-item">
+                        <div class="benefit-item__icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="benefit-item__content">
+                            <h3>Ưu đãi độc quyền</h3>
+                            <p>Giảm đến 30% cho thành viên mới đăng ký</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-item__icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="benefit-item__content">
+                            <h3>Thông báo sớm</h3>
+                            <p>Nhận thông tin tour mới & khuyến mãi đầu tiên</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-item__icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="benefit-item__content">
+                            <h3>Tích điểm thưởng</h3>
+                            <p>Đổi điểm lấy voucher giảm giá hấp dẫn</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-item__icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="benefit-item__content">
+                            <h3>Hỗ trợ VIP</h3>
+                            <p>Đường dây nóng riêng cho thành viên 24/7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Register Form -->
+                <div class="register-form-card">
+                    <div class="register-form-card__header">
+                        <div class="register-form-card__icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h2>Đăng Ký Ngay</h2>
+                        <p>Tạo tài khoản miễn phí chỉ trong 1 phút</p>
+                    </div>
+
+                    <form class="register-form" id="registerForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">
+                                    <i class="fas fa-user"></i> Họ
+                                </label>
+                                <input type="text" id="lastName" class="form-input" placeholder="Nguyễn" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">
+                                    <i class="fas fa-user"></i> Tên
+                                </label>
+                                <input type="text" id="firstName" class="form-input" placeholder="Văn A" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">
+                                <i class="fas fa-envelope"></i> Email
+                            </label>
+                            <input type="email" id="email" class="form-input" placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">
+                                <i class="fas fa-phone"></i> Số điện thoại
+                            </label>
+                            <input type="tel" id="phone" class="form-input" placeholder="0912 345 678" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="form-label">
+                                <i class="fas fa-lock"></i> Mật khẩu
+                            </label>
+                            <div class="form-input-wrapper">
+                                <input type="password" id="password" class="form-input" placeholder="Tối thiểu 8 ký tự"
+                                    required>
+                                <button type="button" class="form-toggle-password" id="togglePassword"
+                                    aria-label="Hiện mật khẩu">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <div class="password-strength" id="passwordStrength">
+                                <div class="password-strength__bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword" class="form-label">
+                                <i class="fas fa-lock"></i> Xác nhận mật khẩu
+                            </label>
+                            <div class="form-input-wrapper">
+                                <input type="password" id="confirmPassword" class="form-input"
+                                    placeholder="Nhập lại mật khẩu" required>
+                                <button type="button" class="form-toggle-password" id="toggleConfirmPassword"
+                                    aria-label="Hiện mật khẩu">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <label for="agreeTerms">
+                                Tôi đồng ý với <a href="#" class="form-link">Điều khoản dịch vụ</a> và <a href="#"
+                                    class="form-link">Chính sách bảo mật</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="form-submit" id="submitRegister">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Đăng Ký Tài Khoản</span>
+                        </button>
+
+                        <div class="form-divider">
+                            <span>Hoặc đăng ký bằng</span>
+                        </div>
+
+                        <div class="form-social">
+                            <button type="button" class="form-social__btn form-social__btn--google">
+                                <i class="fab fa-google"></i>
+                                <span>Google</span>
+                            </button>
+                            <button type="button" class="form-social__btn form-social__btn--facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </button>
+                        </div>
+
+                        <p class="form-footer-text">
+                            Đã có tài khoản? <a href="login.html" class="form-link">Đăng nhập ngay</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+                <p class="footer__text">Dấu Chân Việt chuyên cung cấp các tour du lịch trong nước và nước ngoài
+                    với chất lượng dịch vụ tốt nhất và giá cả hợp lý nhất.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">LIÊN KẾT NHANH</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Tour trong nước</a></li>
+                    <li><a href="#">Tour nước ngoài</a></li>
+                    <li><a href="#">Kinh nghiệm du lịch</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">THÔNG TIN LIÊN HỆ</h3>
+                <ul class="footer__contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường Nguyễn Trãi, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone-alt"></i> 0336705749</li>
+                    <li><i class="fas fa-envelope"></i> anhvtlpk04697@gmail.com</li>
+                    <li><i class="far fa-clock"></i> T2 - T7: 8:00 - 17:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Thiết Kế Web Du Lịch. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        // Redirect if already logged in
+        if (Auth.isLoggedIn()) {
+            window.location.href = 'profile.html';
+        }
+
+        // ===== REGISTER FORM LOGIC =====
+
+        // Toggle password visibility
+        function setupPasswordToggle(toggleId, inputId) {
+            const toggle = document.getElementById(toggleId);
+            const input = document.getElementById(inputId);
+            if (toggle && input) {
+                toggle.addEventListener('click', () => {
+                    const type = input.type === 'password' ? 'text' : 'password';
+                    input.type = type;
+                    const icon = toggle.querySelector('i');
+                    icon.classList.toggle('fa-eye');
+                    icon.classList.toggle('fa-eye-slash');
+                });
+            }
+        }
+        setupPasswordToggle('togglePassword', 'password');
+        setupPasswordToggle('toggleConfirmPassword', 'confirmPassword');
+
+        // Password strength indicator
+        const passwordInput = document.getElementById('password');
+        const strengthBar = document.querySelector('.password-strength__bar');
+
+        if (passwordInput && strengthBar) {
+            passwordInput.addEventListener('input', () => {
+                const val = passwordInput.value;
+                let strength = 0;
+                if (val.length >= 8) strength++;
+                if (/[A-Z]/.test(val)) strength++;
+                if (/[0-9]/.test(val)) strength++;
+                if (/[^A-Za-z0-9]/.test(val)) strength++;
+
+                const colors = ['#d32f2f', '#ff6600', '#e8a020', '#4caf50'];
+                const widths = ['25%', '50%', '75%', '100%'];
+
+                if (val.length === 0) {
+                    strengthBar.style.width = '0%';
+                    strengthBar.style.background = 'transparent';
+                } else {
+                    strengthBar.style.width = widths[strength - 1] || '10%';
+                    strengthBar.style.background = colors[strength - 1] || '#d32f2f';
+                }
+            });
+        }
+
+        // Form submission
+        const registerForm = document.getElementById('registerForm');
+        if (registerForm) {
+            registerForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+
+                if (password !== confirmPassword) {
+                    showAuthNotification('Mật khẩu xác nhận không khớp!', 'error');
+                    return;
+                }
+
+                if (password.length < 8) {
+                    showAuthNotification('Mật khẩu phải có ít nhất 8 ký tự!', 'error');
+                    return;
+                }
+
+                const btn = document.getElementById('submitRegister');
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Đang xử lý...</span>';
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    const lastName = document.getElementById('lastName').value;
+                    const firstName = document.getElementById('firstName').value;
+                    const email = document.getElementById('email').value;
+                    const phone = document.getElementById('phone').value;
+
+                    const result = Auth.register({
+                        lastName: lastName,
+                        firstName: firstName,
+                        email: email,
+                        phone: phone,
+                        password: password
+                    });
+
+                    if (result.success) {
+                        // Send registration info via FormSubmit.co
+                        sendRegistrationEmail({
+                            fullName: lastName + ' ' + firstName,
+                            email: email,
+                            phone: phone,
+                            registerDate: new Date().toLocaleString('vi-VN')
+                        });
+
+                        btn.innerHTML = '<i class="fas fa-check"></i> <span>Đăng ký thành công!</span>';
+                        btn.style.background = 'linear-gradient(135deg, #4caf50, #2e7d32)';
+                        showAuthNotification('Đăng ký thành công! Đang chuyển đến hồ sơ... 🎉', 'success');
+
+                        setTimeout(() => {
+                            window.location.href = 'profile.html';
+                        }, 1500);
+                    } else {
+                        btn.innerHTML = '<i class="fas fa-user-plus"></i> <span>Đăng Ký Tài Khoản</span>';
+                        btn.disabled = false;
+                        showAuthNotification(result.message, 'error');
+                    }
+                }, 1000);
+            });
+        }
+
+        // Notification system is provided by auth.js (showAuthNotification)
+
+        // Input focus effects
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.closest('.form-group')?.classList.add('focused');
+            });
+            input.addEventListener('blur', () => {
+                input.closest('.form-group')?.classList.remove('focused');
+            });
+        });
+
+        // ===== SEND REGISTRATION EMAIL VIA FORMSUBMIT.CO =====
+        function sendRegistrationEmail(data) {
+            fetch('https://formsubmit.co/ajax/anhvtlpk04697@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    _subject: '🆕 Thành viên mới đăng ký: ' + data.fullName,
+                    'Họ tên': data.fullName,
+                    'Email': data.email,
+                    'Số điện thoại': data.phone,
+                    'Ngày đăng ký': data.registerDate,
+                    _template: 'table'
+                })
+            })
+                .then(response => response.json())
+                .then(result => {
+                    console.log('Email sent successfully!', result);
+                })
+                .catch(error => {
+                    console.log('Email failed to send:', error);
+                });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chi tiết tour du lịch - Dấu Chân Việt">
+    <title>Chi Tiết Tour - Dấu Chân Việt</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="container top-header__inner">
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/paint-palette.png" alt="Logo" class="logo__icon">
+                <span class="logo__text">Dấu Chân Việt</span>
+                <img src="https://img.icons8.com/color/24/paint-brush.png" alt="" class="logo__brush">
+            </div>
+            <div class="hotline">
+                <div class="hotline__icon-wrap"><i class="fas fa-phone-alt hotline__icon"></i></div>
+                <div class="hotline__info">
+                    <span class="hotline__number">Phone: 0336705749</span>
+                    <span class="hotline__sub">Gọi để được tư vấn ngay</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav__list" id="navList">
+                <li class="nav__item"><a href="index.html" class="nav__link">TRANG CHỦ</a></li>
+                <li class="nav__item nav__item--dropdown">
+                    <a href="hotels.html" class="nav__link">KHÁCH SẠN <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="hotels.html#3sao">Khách sạn 3 sao</a></li>
+                        <li><a href="hotels.html#4sao">Khách sạn 4 sao</a></li>
+                        <li><a href="hotels.html#5sao">Khách sạn 5 sao</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="domestic.html" class="nav__link">DU LỊCH TRONG NƯỚC</a></li>
+                <li class="nav__item"><a href="international.html" class="nav__link">DU LỊCH NƯỚC NGOÀI</a></li>
+                <li class="nav__item"><a href="policy.html" class="nav__link">CHÍNH SÁCH CHUNG</a></li>
+                <li class="nav__item"><a href="tips.html" class="nav__link">KINH NGHIỆM DU LỊCH</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="page-banner">
+        <div class="page-banner__overlay"></div>
+        <div class="page-banner__content">
+            <h1 class="page-banner__title" id="bannerTitle">Chi Tiết Tour</h1>
+            <p class="page-banner__breadcrumb">
+                <a href="index.html">Trang chủ</a><i class="fas fa-chevron-right"></i>
+                <a href="#" id="breadcrumbBack">Tour</a><i class="fas fa-chevron-right"></i>
+                <span id="breadcrumbName">Chi tiết</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- TOUR DETAIL CONTENT -->
+    <section class="detail-section">
+        <div class="container">
+            <div class="detail-layout" id="detailContent">
+                <!-- JS will populate -->
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED TOURS -->
+    <section class="content-section content-section--alt">
+        <div class="container">
+            <h2 class="section-title">TOUR LIÊN QUAN</h2>
+            <div class="card-grid" id="relatedTours"></div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+                <p class="footer__text">Dấu Chân Việt chuyên cung cấp các tour du lịch trong nước và nước ngoài với chất
+                    lượng dịch vụ tốt nhất.</p>
+                <div class="footer__social"><a href="#" class="footer__social-link"><i
+                            class="fab fa-facebook-f"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-instagram"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-youtube"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-twitter"></i></a></div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">LIÊN KẾT NHANH</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="domestic.html">Tour trong nước</a></li>
+                    <li><a href="international.html">Tour nước ngoài</a></li>
+                    <li><a href="tips.html">Kinh nghiệm du lịch</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">THÔNG TIN LIÊN HỆ</h3>
+                <ul class="footer__contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường Nguyễn Trãi, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone-alt"></i> 0999 000 000</li>
+                    <li><i class="fas fa-envelope"></i> info@thietkeweb.vn</li>
+                    <li><i class="far fa-clock"></i> T2 - T7: 8:00 - 17:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Dấu Chân Việt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="tour-data.js"></script>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        // Get tour ID from URL
+        const params = new URLSearchParams(window.location.search);
+        const tourId = params.get('id');
+        const tour = TOUR_DATA[tourId];
+
+        if (!tour) {
+            document.getElementById('detailContent').innerHTML = `
+                <div style="text-align:center;padding:60px 20px;">
+                    <i class="fas fa-exclamation-triangle" style="font-size:60px;color:var(--color-accent);margin-bottom:20px;"></i>
+                    <h2>Tour không tồn tại</h2>
+                    <p style="margin:15px 0 30px;color:var(--color-gray);">Tour bạn tìm kiếm không có trong hệ thống.</p>
+                    <a href="domestic.html" class="tour-card__btn" style="padding:12px 30px;font-size:16px;">Xem tất cả tour</a>
+                </div>`;
+        } else {
+            // Update page
+            document.title = tour.name + ' - Dấu Chân Việt';
+            document.getElementById('bannerTitle').textContent = tour.name;
+            document.getElementById('breadcrumbName').textContent = tour.name;
+            const backLink = document.getElementById('breadcrumbBack');
+            if (tour.type === 'domestic') {
+                backLink.href = 'domestic.html';
+                backLink.textContent = 'Tour trong nước';
+            } else {
+                backLink.href = 'international.html';
+                backLink.textContent = 'Tour nước ngoài';
+            }
+
+            // Build detail
+            const detailHTML = `
+                <div class="detail-main">
+                    <!-- Gallery -->
+                    <div class="detail-gallery">
+                        <div class="detail-gallery__main">
+                            <img src="${tour.image}" alt="${tour.name}" id="mainImage">
+                            ${tour.badge ? `<div class="detail-gallery__badge">${tour.badge}</div>` : ''}
+                        </div>
+                        <div class="detail-gallery__thumbs">
+                            ${tour.gallery.map((img, i) => `
+                                <img src="${img}" alt="Ảnh ${i + 1}" class="detail-gallery__thumb ${i === 0 ? 'active' : ''}" onclick="changeImage(this, '${img}')">
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="detail-block">
+                        <h2 class="detail-block__title"><i class="fas fa-info-circle"></i> Giới thiệu tour</h2>
+                        <div class="detail-block__content">${tour.description}</div>
+                    </div>
+
+                    <!-- Highlights -->
+                    <div class="detail-block">
+                        <h2 class="detail-block__title"><i class="fas fa-star"></i> Điểm nổi bật</h2>
+                        <div class="detail-highlights">
+                            ${tour.highlights.map(h => `<span class="detail-highlight-tag"><i class="fas fa-check-circle"></i> ${h}</span>`).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Itinerary -->
+                    <div class="detail-block">
+                        <h2 class="detail-block__title"><i class="fas fa-route"></i> Lịch trình tour</h2>
+                        <div class="detail-itinerary">
+                            ${tour.itinerary.map((item, i) => `
+                                <div class="itinerary-item">
+                                    <div class="itinerary-item__marker">
+                                        <div class="itinerary-item__dot">${i + 1}</div>
+                                        ${i < tour.itinerary.length - 1 ? '<div class="itinerary-item__line"></div>' : ''}
+                                    </div>
+                                    <div class="itinerary-item__content">
+                                        <h4>${item.day}: ${item.title}</h4>
+                                        <p>${item.details}</p>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Includes / Excludes -->
+                    <div class="detail-block">
+                        <h2 class="detail-block__title"><i class="fas fa-clipboard-list"></i> Dịch vụ bao gồm</h2>
+                        <div class="detail-services">
+                            <div class="detail-services__col detail-services__col--include">
+                                <h4><i class="fas fa-check-circle"></i> Bao gồm</h4>
+                                <ul>${tour.includes.map(i => `<li><i class="fas fa-check"></i> ${i}</li>`).join('')}</ul>
+                            </div>
+                            <div class="detail-services__col detail-services__col--exclude">
+                                <h4><i class="fas fa-times-circle"></i> Không bao gồm</h4>
+                                <ul>${tour.excludes.map(i => `<li><i class="fas fa-times"></i> ${i}</li>`).join('')}</ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SIDEBAR -->
+                <div class="detail-sidebar">
+                    <div class="detail-price-card">
+                        <div class="detail-price-card__header">
+                            <span class="detail-price-card__label">Giá từ</span>
+                            ${tour.priceOld ? `<span class="detail-price-card__old">${formatPrice(tour.priceOld)}</span>` : ''}
+                            <span class="detail-price-card__current">${formatPrice(tour.price)}</span>
+                            <span class="detail-price-card__per">/người</span>
+                        </div>
+                        <div class="detail-price-card__info">
+                            <div class="detail-price-card__row"><i class="far fa-clock"></i><span>${tour.duration}</span></div>
+                            <div class="detail-price-card__row"><i class="fas fa-map-marker-alt"></i><span>Khởi hành: ${tour.departure}</span></div>
+                            <div class="detail-price-card__row"><i class="fas fa-bus"></i><span>Phương tiện: ${tour.transport}</span></div>
+                            <div class="detail-price-card__row"><i class="fas fa-users"></i><span>${tour.groupSize}</span></div>
+                        </div>
+                        <div class="detail-price-card__rating">
+                            <div class="stars">${renderStars(tour.rating)}</div>
+                            <span>${tour.rating}/5 (${tour.reviews} đánh giá)</span>
+                        </div>
+                        <a href="checkout.html?type=tour&id=${tour.id}" class="detail-price-card__btn" id="bookNowBtn">
+                            <i class="fas fa-shopping-cart"></i> ĐẶT TOUR NGAY
+                        </a>
+                        <div class="detail-price-card__hotline">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <small>Tư vấn miễn phí</small>
+                                <strong>0999 000 000</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-share-card">
+                        <h4>Chia sẻ tour này</h4>
+                        <div class="detail-share-btns">
+                            <a href="#" class="detail-share-btn detail-share-btn--fb"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="detail-share-btn detail-share-btn--tw"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="detail-share-btn detail-share-btn--pin"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" class="detail-share-btn detail-share-btn--mail"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('detailContent').innerHTML = detailHTML;
+
+            // Related tours
+            const related = Object.values(TOUR_DATA).filter(t => t.type === tour.type && t.id !== tour.id).slice(0, 3);
+            const relatedHTML = related.map(t => `
+                <div class="content-card">
+                    <div class="content-card__img-wrap">
+                        <img src="${t.gallery[0]}" alt="${t.name}" class="content-card__img">
+                        ${t.badge ? `<div class="content-card__badge content-card__badge--red">${t.badge}</div>` : ''}
+                    </div>
+                    <div class="content-card__body">
+                        <h3 class="content-card__title">${t.name}</h3>
+                        <p class="content-card__meta"><i class="far fa-clock"></i> ${t.duration}</p>
+                        <p class="content-card__desc">${t.shortDesc}</p>
+                        <div class="content-card__footer">
+                            <span class="content-card__price">${formatPrice(t.price)}</span>
+                            <a href="tour-detail.html?id=${t.id}" class="content-card__btn">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            document.getElementById('relatedTours').innerHTML = relatedHTML;
+        }
+
+        function changeImage(thumb, src) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.detail-gallery__thumb').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

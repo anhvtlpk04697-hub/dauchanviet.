@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hồ sơ cá nhân - Du Lịch Muôn Nơi">
+    <title>Hồ Sơ Cá Nhân - Dấu Chân Việt</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===== TOP HEADER ===== -->
+    <header class="top-header">
+        <div class="container top-header__inner">
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/paint-palette.png" alt="Logo" class="logo__icon">
+                <span class="logo__text">Dấu Chân Việt</span>
+                <img src="https://img.icons8.com/color/24/paint-brush.png" alt="" class="logo__brush">
+            </div>
+            <div class="hotline">
+                <div class="hotline__icon-wrap">
+                    <i class="fas fa-phone-alt hotline__icon"></i>
+                </div>
+                <div class="hotline__info">
+                    <span class="hotline__number">Phone: 0336705749</span>
+                    <span class="hotline__sub">Gọi để được tư vấn ngay</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav__list" id="navList">
+                <li class="nav__item"><a href="index.html" class="nav__link">TRANG CHỦ</a></li>
+                <li class="nav__item nav__item--dropdown">
+                    <a href="hotels.html" class="nav__link">KHÁCH SẠN <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="hotels.html#3sao">Khách sạn 3 sao</a></li>
+                        <li><a href="hotels.html#4sao">Khách sạn 4 sao</a></li>
+                        <li><a href="hotels.html#5sao">Khách sạn 5 sao</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="domestic.html" class="nav__link">DU LỊCH TRONG NƯỚC</a></li>
+                <li class="nav__item"><a href="international.html" class="nav__link">DU LỊCH NƯỚC NGOÀI</a></li>
+                <li class="nav__item"><a href="policy.html" class="nav__link">CHÍNH SÁCH CHUNG</a></li>
+                <li class="nav__item"><a href="tips.html" class="nav__link">KINH NGHIỆM DU LỊCH</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PROFILE HEADER ===== -->
+    <section class="profile-header" id="profileHeader">
+        <div class="profile-header__bg"></div>
+        <div class="container">
+            <div class="profile-header__content">
+                <div class="profile-avatar-large" id="profileAvatarLarge">
+                    <span id="profileInitials">?</span>
+                </div>
+                <div class="profile-header__info">
+                    <h1 class="profile-header__name" id="profileFullName">Tên người dùng</h1>
+                    <p class="profile-header__email" id="profileEmail">email@example.com</p>
+                    <div class="profile-header__badges">
+                        <span class="profile-badge profile-badge--level" id="profileLevel">
+                            <i class="fas fa-crown"></i> Thành viên mới
+                        </span>
+                        <span class="profile-badge profile-badge--points" id="profilePoints">
+                            <i class="fas fa-star"></i> 0 điểm
+                        </span>
+                        <span class="profile-badge profile-badge--date" id="profileDate">
+                            <i class="fas fa-calendar-alt"></i> Tham gia: --
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROFILE CONTENT ===== -->
+    <section class="profile-content">
+        <div class="container">
+            <div class="profile-layout">
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <nav class="profile-nav">
+                        <button class="profile-nav__item active" data-tab="overview" id="tabOverview">
+                            <i class="fas fa-th-large"></i>
+                            <span>Tổng quan</span>
+                        </button>
+                        <button class="profile-nav__item" data-tab="edit" id="tabEdit">
+                            <i class="fas fa-user-edit"></i>
+                            <span>Chỉnh sửa hồ sơ</span>
+                        </button>
+                        <button class="profile-nav__item" data-tab="bookings" id="tabBookings">
+                            <i class="fas fa-suitcase-rolling"></i>
+                            <span>Tour đã đặt</span>
+                        </button>
+                        <button class="profile-nav__item" data-tab="wishlist" id="tabWishlist">
+                            <i class="fas fa-heart"></i>
+                            <span>Yêu thích</span>
+                        </button>
+                        <button class="profile-nav__item" data-tab="settings" id="tabSettings">
+                            <i class="fas fa-cog"></i>
+                            <span>Cài đặt</span>
+                        </button>
+                        <button class="profile-nav__item profile-nav__item--logout" id="sidebarLogout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Đăng xuất</span>
+                        </button>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="profile-main">
+                    <!-- Tab: Overview -->
+                    <div class="profile-tab active" id="panelOverview">
+                        <h2 class="profile-tab__title"><i class="fas fa-th-large"></i> Tổng Quan</h2>
+
+                        <div class="profile-stats">
+                            <div class="profile-stat-card">
+                                <div class="profile-stat-card__icon"
+                                    style="background: linear-gradient(135deg, #4caf50, #2e7d32);">
+                                    <i class="fas fa-suitcase-rolling"></i>
+                                </div>
+                                <div class="profile-stat-card__info">
+                                    <span class="profile-stat-card__number" id="statTours">0</span>
+                                    <span class="profile-stat-card__label">Tour đã đặt</span>
+                                </div>
+                            </div>
+                            <div class="profile-stat-card">
+                                <div class="profile-stat-card__icon"
+                                    style="background: linear-gradient(135deg, #e91e63, #c2185b);">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="profile-stat-card__info">
+                                    <span class="profile-stat-card__number" id="statWishlist">0</span>
+                                    <span class="profile-stat-card__label">Yêu thích</span>
+                                </div>
+                            </div>
+                            <div class="profile-stat-card">
+                                <div class="profile-stat-card__icon"
+                                    style="background: linear-gradient(135deg, var(--color-accent), var(--color-orange));">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="profile-stat-card__info">
+                                    <span class="profile-stat-card__number" id="statPoints">0</span>
+                                    <span class="profile-stat-card__label">Điểm thưởng</span>
+                                </div>
+                            </div>
+                            <div class="profile-stat-card">
+                                <div class="profile-stat-card__icon"
+                                    style="background: linear-gradient(135deg, #2196f3, #1565c0);">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="profile-stat-card__info">
+                                    <span class="profile-stat-card__number" id="statLevel">Mới</span>
+                                    <span class="profile-stat-card__label">Hạng thành viên</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-info-card">
+                            <h3><i class="fas fa-id-card"></i> Thông tin cá nhân</h3>
+                            <div class="profile-info-grid">
+                                <div class="profile-info-item">
+                                    <span class="profile-info-item__label">Họ và tên</span>
+                                    <span class="profile-info-item__value" id="infoFullName">--</span>
+                                </div>
+                                <div class="profile-info-item">
+                                    <span class="profile-info-item__label">Email</span>
+                                    <span class="profile-info-item__value" id="infoEmail">--</span>
+                                </div>
+                                <div class="profile-info-item">
+                                    <span class="profile-info-item__label">Số điện thoại</span>
+                                    <span class="profile-info-item__value" id="infoPhone">--</span>
+                                </div>
+                                <div class="profile-info-item">
+                                    <span class="profile-info-item__label">Địa chỉ</span>
+                                    <span class="profile-info-item__value" id="infoAddress">Chưa cập nhật</span>
+                                </div>
+                                <div class="profile-info-item">
+                                    <span class="profile-info-item__label">Ngày sinh</span>
+                                    <span class="profile-info-item__value" id="infoBirthdate">Chưa cập nhật</span>
+                                </div>
+                                <div class="profile-info-item">
+                                    <span class="profile-info-item__label">Giới tính</span>
+                                    <span class="profile-info-item__value" id="infoGender">Chưa cập nhật</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-info-card">
+                            <h3><i class="fas fa-history"></i> Hoạt động gần đây</h3>
+                            <div class="profile-activity-list" id="activityList">
+                                <div class="profile-activity">
+                                    <div class="profile-activity__icon" style="background: #e8f5e9; color: #4caf50;">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <div class="profile-activity__content">
+                                        <p>Tạo tài khoản thành công</p>
+                                        <span id="activityJoinDate">--</span>
+                                    </div>
+                                </div>
+                                <div class="profile-activity">
+                                    <div class="profile-activity__icon" style="background: #fff3e0; color: #ff9800;">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <div class="profile-activity__content">
+                                        <p>Nhận 500 điểm thưởng chào mừng</p>
+                                        <span>Ưu đãi thành viên mới</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Edit Profile -->
+                    <div class="profile-tab" id="panelEdit">
+                        <h2 class="profile-tab__title"><i class="fas fa-user-edit"></i> Chỉnh Sửa Hồ Sơ</h2>
+
+                        <div class="profile-info-card">
+                            <form id="editProfileForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="editLastName" class="form-label">
+                                            <i class="fas fa-user"></i> Họ
+                                        </label>
+                                        <input type="text" id="editLastName" class="form-input" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="editFirstName" class="form-label">
+                                            <i class="fas fa-user"></i> Tên
+                                        </label>
+                                        <input type="text" id="editFirstName" class="form-input" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="editEmail" class="form-label">
+                                            <i class="fas fa-envelope"></i> Email
+                                        </label>
+                                        <input type="email" id="editEmail" class="form-input" disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="editPhone" class="form-label">
+                                            <i class="fas fa-phone"></i> Số điện thoại
+                                        </label>
+                                        <input type="tel" id="editPhone" class="form-input">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="editBirthdate" class="form-label">
+                                            <i class="fas fa-calendar-alt"></i> Ngày sinh
+                                        </label>
+                                        <input type="date" id="editBirthdate" class="form-input">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="editGender" class="form-label">
+                                            <i class="fas fa-venus-mars"></i> Giới tính
+                                        </label>
+                                        <select id="editGender" class="form-input form-select">
+                                            <option value="">Chọn giới tính</option>
+                                            <option value="Nam">Nam</option>
+                                            <option value="Nữ">Nữ</option>
+                                            <option value="Khác">Khác</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="editAddress" class="form-label">
+                                        <i class="fas fa-map-marker-alt"></i> Địa chỉ
+                                    </label>
+                                    <input type="text" id="editAddress" class="form-input"
+                                        placeholder="Nhập địa chỉ của bạn">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="editBio" class="form-label">
+                                        <i class="fas fa-pen-fancy"></i> Giới thiệu bản thân
+                                    </label>
+                                    <textarea id="editBio" class="form-input form-textarea" rows="4"
+                                        placeholder="Viết vài dòng giới thiệu về bạn..."></textarea>
+                                </div>
+
+                                <button type="submit" class="form-submit" id="saveProfile">
+                                    <i class="fas fa-save"></i>
+                                    <span>Lưu Thay Đổi</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Bookings -->
+                    <div class="profile-tab" id="panelBookings">
+                        <h2 class="profile-tab__title"><i class="fas fa-suitcase-rolling"></i> Tour Đã Đặt</h2>
+
+                        <div class="profile-empty-state">
+                            <div class="profile-empty-state__icon">
+                                <i class="fas fa-suitcase-rolling"></i>
+                            </div>
+                            <h3>Chưa có tour nào</h3>
+                            <p>Bạn chưa đặt tour du lịch nào. Hãy khám phá các tour hấp dẫn của chúng tôi!</p>
+                            <a href="index.html#tours" class="profile-empty-state__btn">
+                                <i class="fas fa-search"></i> Khám phá tour
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Wishlist -->
+                    <div class="profile-tab" id="panelWishlist">
+                        <h2 class="profile-tab__title"><i class="fas fa-heart"></i> Tour Yêu Thích</h2>
+
+                        <div class="profile-empty-state">
+                            <div class="profile-empty-state__icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Danh sách trống</h3>
+                            <p>Bạn chưa thêm tour nào vào danh sách yêu thích. Hãy lưu lại những tour bạn quan tâm!</p>
+                            <a href="index.html#tours" class="profile-empty-state__btn">
+                                <i class="fas fa-compass"></i> Tìm tour yêu thích
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Settings -->
+                    <div class="profile-tab" id="panelSettings">
+                        <h2 class="profile-tab__title"><i class="fas fa-cog"></i> Cài Đặt</h2>
+
+                        <div class="profile-info-card">
+                            <h3><i class="fas fa-lock"></i> Đổi mật khẩu</h3>
+                            <form id="changePasswordForm">
+                                <div class="form-group">
+                                    <label for="currentPassword" class="form-label">
+                                        <i class="fas fa-lock"></i> Mật khẩu hiện tại
+                                    </label>
+                                    <input type="password" id="currentPassword" class="form-input"
+                                        placeholder="Nhập mật khẩu hiện tại" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="newPassword" class="form-label">
+                                        <i class="fas fa-key"></i> Mật khẩu mới
+                                    </label>
+                                    <input type="password" id="newPassword" class="form-input"
+                                        placeholder="Tối thiểu 8 ký tự" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmNewPassword" class="form-label">
+                                        <i class="fas fa-key"></i> Xác nhận mật khẩu mới
+                                    </label>
+                                    <input type="password" id="confirmNewPassword" class="form-input"
+                                        placeholder="Nhập lại mật khẩu mới" required>
+                                </div>
+                                <button type="submit" class="form-submit" id="savePassword">
+                                    <i class="fas fa-key"></i>
+                                    <span>Đổi Mật Khẩu</span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="profile-info-card">
+                            <h3><i class="fas fa-bell"></i> Thông báo</h3>
+                            <div class="settings-toggles">
+                                <label class="settings-toggle">
+                                    <span class="settings-toggle__info">
+                                        <strong>Thông báo email</strong>
+                                        <small>Nhận email về tour mới và khuyến mãi</small>
+                                    </span>
+                                    <input type="checkbox" class="settings-toggle__input" checked>
+                                    <span class="settings-toggle__slider"></span>
+                                </label>
+                                <label class="settings-toggle">
+                                    <span class="settings-toggle__info">
+                                        <strong>Nhắc nhở tour</strong>
+                                        <small>Nhận nhắc nhở trước ngày khởi hành</small>
+                                    </span>
+                                    <input type="checkbox" class="settings-toggle__input" checked>
+                                    <span class="settings-toggle__slider"></span>
+                                </label>
+                                <label class="settings-toggle">
+                                    <span class="settings-toggle__info">
+                                        <strong>Tin tức du lịch</strong>
+                                        <small>Cập nhật kinh nghiệm và tips du lịch</small>
+                                    </span>
+                                    <input type="checkbox" class="settings-toggle__input">
+                                    <span class="settings-toggle__slider"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="profile-info-card profile-info-card--danger">
+                            <h3><i class="fas fa-exclamation-triangle"></i> Vùng nguy hiểm</h3>
+                            <p style="color: var(--color-gray); margin-bottom: 15px;">Hành động này không thể hoàn tác.
+                                Tất cả dữ liệu của bạn sẽ bị xóa vĩnh viễn.</p>
+                            <button class="profile-danger-btn" id="deleteAccountBtn">
+                                <i class="fas fa-trash-alt"></i> Xóa tài khoản
+                            </button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+                <p class="footer__text">Dấu Chân Việt chuyên cung cấp các tour du lịch trong nước và nước ngoài
+                    với chất lượng dịch vụ tốt nhất và giá cả hợp lý nhất.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">LIÊN KẾT NHANH</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Tour trong nước</a></li>
+                    <li><a href="#">Tour nước ngoài</a></li>
+                    <li><a href="#">Kinh nghiệm du lịch</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">THÔNG TIN LIÊN HỆ</h3>
+                <ul class="footer__contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường Nguyễn Trãi, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone-alt"></i> 0336705749</li>
+                    <li><i class="fas fa-envelope"></i> anhvtlpk04697@gmail.com</li>
+                    <li><i class="far fa-clock"></i> T2 - T7: 8:00 - 17:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Dấu Chân Việt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        // Redirect if not logged in
+        if (!Auth.isLoggedIn()) {
+            window.location.href = 'login.html';
+        }
+
+        const user = Auth.getCurrentUser();
+
+        // ===== POPULATE PROFILE DATA =====
+        function populateProfile() {
+            if (!user) return;
+
+            // Header
+            document.getElementById('profileInitials').textContent = Auth.getInitials(user);
+            document.getElementById('profileFullName').textContent = Auth.getFullName(user);
+            document.getElementById('profileEmail').textContent = user.email || '';
+            document.getElementById('profileLevel').innerHTML = `<i class="fas fa-crown"></i> ${user.level || 'Thành viên mới'}`;
+            document.getElementById('profilePoints').innerHTML = `<i class="fas fa-star"></i> ${user.points || 0} điểm`;
+
+            const joinDate = user.memberSince ? new Date(user.memberSince).toLocaleDateString('vi-VN') : '--';
+            document.getElementById('profileDate').innerHTML = `<i class="fas fa-calendar-alt"></i> Tham gia: ${joinDate}`;
+
+            // Stats
+            document.getElementById('statTours').textContent = (user.bookedTours || []).length;
+            document.getElementById('statWishlist').textContent = (user.wishlist || []).length;
+            document.getElementById('statPoints').textContent = user.points || 0;
+            document.getElementById('statLevel').textContent = user.level || 'Mới';
+
+            // Info overview
+            document.getElementById('infoFullName').textContent = Auth.getFullName(user);
+            document.getElementById('infoEmail').textContent = user.email || '--';
+            document.getElementById('infoPhone').textContent = user.phone || 'Chưa cập nhật';
+            document.getElementById('infoAddress').textContent = user.address || 'Chưa cập nhật';
+            document.getElementById('infoBirthdate').textContent = user.birthdate || 'Chưa cập nhật';
+            document.getElementById('infoGender').textContent = user.gender || 'Chưa cập nhật';
+
+            // Activity
+            document.getElementById('activityJoinDate').textContent = joinDate;
+
+            // Edit form
+            document.getElementById('editLastName').value = user.lastName || '';
+            document.getElementById('editFirstName').value = user.firstName || '';
+            document.getElementById('editEmail').value = user.email || '';
+            document.getElementById('editPhone').value = user.phone || '';
+            document.getElementById('editBirthdate').value = user.birthdate || '';
+            document.getElementById('editGender').value = user.gender || '';
+            document.getElementById('editAddress').value = user.address || '';
+            document.getElementById('editBio').value = user.bio || '';
+        }
+
+        populateProfile();
+
+        // ===== TAB NAVIGATION =====
+        const tabButtons = document.querySelectorAll('.profile-nav__item[data-tab]');
+        const tabPanels = document.querySelectorAll('.profile-tab');
+
+        function switchTab(tabName) {
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabPanels.forEach(panel => panel.classList.remove('active'));
+
+            const activeBtn = document.querySelector(`[data-tab="${tabName}"]`);
+            const activePanel = document.getElementById(`panel${tabName.charAt(0).toUpperCase() + tabName.slice(1)}`);
+
+            if (activeBtn) activeBtn.classList.add('active');
+            if (activePanel) activePanel.classList.add('active');
+        }
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                switchTab(btn.dataset.tab);
+            });
+        });
+
+        // Handle hash navigation (from nav dropdown links)
+        function handleHash() {
+            const hash = window.location.hash.replace('#', '');
+            if (hash && document.querySelector(`[data-tab="${hash}"]`)) {
+                switchTab(hash);
+            }
+        }
+        handleHash();
+        window.addEventListener('hashchange', handleHash);
+
+        // ===== EDIT PROFILE FORM =====
+        const editForm = document.getElementById('editProfileForm');
+        if (editForm) {
+            editForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const btn = document.getElementById('saveProfile');
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Đang lưu...</span>';
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    const result = Auth.updateProfile({
+                        lastName: document.getElementById('editLastName').value,
+                        firstName: document.getElementById('editFirstName').value,
+                        phone: document.getElementById('editPhone').value,
+                        birthdate: document.getElementById('editBirthdate').value,
+                        gender: document.getElementById('editGender').value,
+                        address: document.getElementById('editAddress').value,
+                        bio: document.getElementById('editBio').value
+                    });
+
+                    if (result.success) {
+                        btn.innerHTML = '<i class="fas fa-check"></i> <span>Đã lưu!</span>';
+                        btn.style.background = 'linear-gradient(135deg, #4caf50, #2e7d32)';
+                        showAuthNotification('Cập nhật hồ sơ thành công! ✅', 'success');
+
+                        // Refresh data
+                        Object.assign(user, result.user);
+                        populateProfile();
+                        updateNavAuth();
+
+                        setTimeout(() => {
+                            btn.innerHTML = '<i class="fas fa-save"></i> <span>Lưu Thay Đổi</span>';
+                            btn.style.background = '';
+                            btn.disabled = false;
+                        }, 2000);
+                    } else {
+                        btn.innerHTML = '<i class="fas fa-save"></i> <span>Lưu Thay Đổi</span>';
+                        btn.disabled = false;
+                        showAuthNotification(result.message, 'error');
+                    }
+                }, 800);
+            });
+        }
+
+        // ===== CHANGE PASSWORD =====
+        const passForm = document.getElementById('changePasswordForm');
+        if (passForm) {
+            passForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const current = document.getElementById('currentPassword').value;
+                const newPass = document.getElementById('newPassword').value;
+                const confirm = document.getElementById('confirmNewPassword').value;
+
+                if (newPass.length < 8) {
+                    showAuthNotification('Mật khẩu mới phải có ít nhất 8 ký tự!', 'error');
+                    return;
+                }
+
+                if (newPass !== confirm) {
+                    showAuthNotification('Mật khẩu xác nhận không khớp!', 'error');
+                    return;
+                }
+
+                const btn = document.getElementById('savePassword');
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Đang xử lý...</span>';
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    const result = Auth.changePassword(current, newPass);
+
+                    if (result.success) {
+                        btn.innerHTML = '<i class="fas fa-check"></i> <span>Đã đổi!</span>';
+                        btn.style.background = 'linear-gradient(135deg, #4caf50, #2e7d32)';
+                        showAuthNotification('Đổi mật khẩu thành công! 🔒', 'success');
+                        passForm.reset();
+
+                        setTimeout(() => {
+                            btn.innerHTML = '<i class="fas fa-key"></i> <span>Đổi Mật Khẩu</span>';
+                            btn.style.background = '';
+                            btn.disabled = false;
+                        }, 2000);
+                    } else {
+                        btn.innerHTML = '<i class="fas fa-key"></i> <span>Đổi Mật Khẩu</span>';
+                        btn.disabled = false;
+                        showAuthNotification(result.message, 'error');
+                    }
+                }, 800);
+            });
+        }
+
+        // ===== SIDEBAR LOGOUT =====
+        const sidebarLogoutBtn = document.getElementById('sidebarLogout');
+        if (sidebarLogoutBtn) {
+            sidebarLogoutBtn.addEventListener('click', () => {
+                Auth.logout();
+                showAuthNotification('Đăng xuất thành công! 👋', 'success');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            });
+        }
+
+        // ===== DELETE ACCOUNT =====
+        const deleteBtn = document.getElementById('deleteAccountBtn');
+        if (deleteBtn) {
+            deleteBtn.addEventListener('click', () => {
+                if (confirm('Bạn có chắc chắn muốn xóa tài khoản? Hành động này không thể hoàn tác!')) {
+                    const users = Auth.getUsers();
+                    const filtered = users.filter(u => u.id !== user.id);
+                    Auth.saveUsers(filtered);
+                    Auth.logout();
+                    showAuthNotification('Tài khoản đã được xóa!', 'success');
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 1500);
+                }
+            });
+        }
+
+        // ===== FOCUS EFFECTS =====
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.closest('.form-group')?.classList.add('focused');
+            });
+            input.addEventListener('blur', () => {
+                input.closest('.form-group')?.classList.remove('focused');
+            });
+        });
+    </script>
+</body>
+
+</html>

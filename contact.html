@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ Du Lịch Muôn Nơi - Tư vấn tour du lịch miễn phí">
+    <title>Liên Hệ - Dấu Chân Việt</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===== TOP HEADER ===== -->
+    <header class="top-header">
+        <div class="container top-header__inner">
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/paint-palette.png" alt="Logo" class="logo__icon">
+                <span class="logo__text">Du Lịch Thế Giới</span>
+                <img src="https://img.icons8.com/color/24/paint-brush.png" alt="" class="logo__brush">
+            </div>
+            <div class="hotline">
+                <div class="hotline__icon-wrap">
+                    <i class="fas fa-phone-alt hotline__icon"></i>
+                </div>
+                <div class="hotline__info">
+                    <span class="hotline__number">Phone: 0999000000</span>
+                    <span class="hotline__sub">Gọi để được tư vấn ngay</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav__list" id="navList">
+                <li class="nav__item"><a href="index.html" class="nav__link">TRANG CHỦ</a></li>
+                <li class="nav__item nav__item--dropdown">
+                    <a href="hotels.html" class="nav__link">KHÁCH SẠN <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="hotels.html#3sao">Khách sạn 3 sao</a></li>
+                        <li><a href="hotels.html#4sao">Khách sạn 4 sao</a></li>
+                        <li><a href="hotels.html#5sao">Khách sạn 5 sao</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="domestic.html" class="nav__link">DU LỊCH TRONG NƯỚC</a></li>
+                <li class="nav__item"><a href="international.html" class="nav__link">DU LỊCH NƯỚC NGOÀI</a></li>
+                <li class="nav__item"><a href="policy.html" class="nav__link">CHÍNH SÁCH CHUNG</a></li>
+                <li class="nav__item"><a href="tips.html" class="nav__link">KINH NGHIỆM DU LỊCH</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link nav__link--active">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE BANNER ===== -->
+    <section class="page-banner">
+        <div class="page-banner__overlay"></div>
+        <div class="page-banner__content">
+            <h1 class="page-banner__title">Liên Hệ Với Chúng Tôi</h1>
+            <p class="page-banner__breadcrumb">
+                <a href="index.html">Trang chủ</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Liên hệ</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT INFO CARDS ===== -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card" id="contactAddress">
+                    <div class="contact-info-card__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Địa chỉ</h3>
+                    <p>123 Đường ABC, Quận 1</p>
+                    <p>TP. Hồ Chí Minh, Việt Nam</p>
+                </div>
+                <div class="contact-info-card" id="contactPhone">
+                    <div class="contact-info-card__icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Điện thoại</h3>
+                    <p>Hotline: 0999 000 000</p>
+                    <p>Tư vấn: 0888 111 222</p>
+                </div>
+                <div class="contact-info-card" id="contactEmail">
+                    <div class="contact-info-card__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@thietkeweb.vn</p>
+                    <p>support@thietkeweb.vn</p>
+                </div>
+                <div class="contact-info-card" id="contactHours">
+                    <div class="contact-info-card__icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <h3>Giờ làm việc</h3>
+                    <p>T2 - T7: 8:00 - 17:30</p>
+                    <p>CN: 9:00 - 12:00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT FORM + MAP ===== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Left: Contact Form -->
+                <div class="contact-form-card">
+                    <div class="contact-form-card__header">
+                        <h2><i class="fas fa-paper-plane"></i> Gửi Tin Nhắn</h2>
+                        <p>Hãy để lại thông tin, chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">
+                                    <i class="fas fa-user"></i> Họ và tên
+                                </label>
+                                <input type="text" id="contactName" class="form-input" placeholder="Nguyễn Văn A"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail" class="form-label">
+                                    <i class="fas fa-envelope"></i> Email
+                                </label>
+                                <input type="email" id="contactEmailInput" class="form-input"
+                                    placeholder="example@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhoneInput" class="form-label">
+                                    <i class="fas fa-phone"></i> Số điện thoại
+                                </label>
+                                <input type="tel" id="contactPhoneInput" class="form-input" placeholder="0912 345 678"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject" class="form-label">
+                                    <i class="fas fa-tag"></i> Chủ đề
+                                </label>
+                                <select id="contactSubject" class="form-input form-select" required>
+                                    <option value="" disabled selected>Chọn chủ đề</option>
+                                    <option value="tour">Tư vấn tour du lịch</option>
+                                    <option value="booking">Đặt tour</option>
+                                    <option value="hotel">Đặt khách sạn</option>
+                                    <option value="complaint">Phản hồi / Khiếu nại</option>
+                                    <option value="partnership">Hợp tác kinh doanh</option>
+                                    <option value="other">Khác</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">
+                                <i class="fas fa-comment-dots"></i> Nội dung tin nhắn
+                            </label>
+                            <textarea id="contactMessage" class="form-input form-textarea" rows="5"
+                                placeholder="Nhập nội dung tin nhắn của bạn..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit" id="submitContact">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Gửi Tin Nhắn</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Map + Quick Contact -->
+                <div class="contact-map-side">
+                    <div class="contact-map-card">
+                        <h3><i class="fas fa-map-marked-alt"></i> Bản Đồ</h3>
+                        <div class="contact-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.427!2d106.700!3d10.776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ2JzMzLjYiTiAxMDbCsDQyJzAwLjAiRQ!5e0!3m2!1svi!2svn!4v1700000000000"
+                                width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen=""
+                                loading="lazy" title="Bản đồ vị trí công ty">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="quick-contact-card">
+                        <h3><i class="fas fa-bolt"></i> Liên hệ nhanh</h3>
+                        <p>Cần hỗ trợ gấp? Liên hệ trực tiếp qua:</p>
+                        <div class="quick-contact-buttons">
+                            <a href="tel:0999000000" class="quick-contact-btn quick-contact-btn--phone">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Gọi ngay</span>
+                            </a>
+                            <a href="https://zalo.me/0999000000" class="quick-contact-btn quick-contact-btn--zalo"
+                                target="_blank">
+                                <i class="fas fa-comment-dots"></i>
+                                <span>Zalo</span>
+                            </a>
+                            <a href="https://m.me/dulichtg" class="quick-contact-btn quick-contact-btn--messenger"
+                                target="_blank">
+                                <i class="fab fa-facebook-messenger"></i>
+                                <span>Messenger</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">CÂU HỎI THƯỜNG GẶP</h2>
+            <div class="faq-grid">
+                <div class="faq-item" id="faq1">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Làm thế nào để đặt tour du lịch?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Bạn có thể đặt tour trực tiếp trên website, gọi điện hotline 0999 000 000, hoặc đến trực tiếp
+                            văn phòng của chúng tôi để được tư vấn chi tiết.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq2">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Chính sách hoàn/hủy tour như thế nào?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Chính sách hoàn/hủy tour tuỳ thuộc vào thời điểm hủy. Hủy trước 15 ngày được hoàn 100%, trước
+                            7 ngày hoàn 70%, trước 3 ngày hoàn 50%. Chi tiết xin liên hệ hotline.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq3">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Tour có bao gồm bảo hiểm du lịch không?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Tất cả các tour của chúng tôi đều bao gồm bảo hiểm du lịch toàn diện với mức bồi thường lên
+                            đến 100 triệu đồng cho mỗi khách hàng.</p>
+                    </div>
+                </div>
+                <div class="faq-item" id="faq4">
+                    <button class="faq-item__question" aria-expanded="false">
+                        <span>Có thể thanh toán bằng hình thức nào?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Chúng tôi chấp nhận thanh toán qua chuyển khoản ngân hàng, tiền mặt, thẻ tín dụng/ghi nợ
+                            (Visa, MasterCard), và các ví điện tử phổ biến (MoMo, ZaloPay, VNPay).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+                <p class="footer__text">Thiết Kế Web Du Lịch chuyên cung cấp các tour du lịch trong nước và nước ngoài
+                    với chất lượng dịch vụ tốt nhất và giá cả hợp lý nhất.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">LIÊN KẾT NHANH</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Tour trong nước</a></li>
+                    <li><a href="#">Tour nước ngoài</a></li>
+                    <li><a href="#">Kinh nghiệm du lịch</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">THÔNG TIN LIÊN HỆ</h3>
+                <ul class="footer__contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone-alt"></i> 0999 000 000</li>
+                    <li><i class="fas fa-envelope"></i> info@thietkeweb.vn</li>
+                    <li><i class="far fa-clock"></i> T2 - T7: 8:00 - 17:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Thiết Kế Web Du Lịch. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        // ===== FAQ ACCORDION =====
+        document.querySelectorAll('.faq-item__question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.faq-item');
+                const isOpen = item.classList.contains('active');
+
+                // Close all others
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                    i.querySelector('.faq-item__question').setAttribute('aria-expanded', 'false');
+                });
+
+                // Toggle current
+                if (!isOpen) {
+                    item.classList.add('active');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // ===== CONTACT FORM SUBMISSION =====
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const btn = document.getElementById('submitContact');
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Đang gửi...</span>';
+                btn.disabled = true;
+
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fas fa-check"></i> <span>Gửi thành công!</span>';
+                    btn.style.background = 'linear-gradient(135deg, #4caf50, #2e7d32)';
+
+                    showNotification('Tin nhắn đã được gửi thành công! Chúng tôi sẽ phản hồi bạn sớm nhất 📧', 'success');
+
+                    setTimeout(() => {
+                        contactForm.reset();
+                        btn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Gửi Tin Nhắn</span>';
+                        btn.style.background = '';
+                        btn.disabled = false;
+                    }, 3000);
+                }, 1500);
+            });
+        }
+
+        // Notification system
+        function showNotification(message, type) {
+            const existing = document.querySelector('.notification');
+            if (existing) existing.remove();
+
+            const notification = document.createElement('div');
+            notification.className = `notification notification--${type}`;
+            notification.innerHTML = `
+                <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i>
+                <span>${message}</span>
+                <button class="notification__close"><i class="fas fa-times"></i></button>
+            `;
+            document.body.appendChild(notification);
+
+            setTimeout(() => notification.classList.add('show'), 10);
+
+            notification.querySelector('.notification__close').addEventListener('click', () => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 300);
+            });
+
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.classList.remove('show');
+                    setTimeout(() => notification.remove(), 300);
+                }
+            }, 5000);
+        }
+
+        // Input focus effects
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.closest('.form-group')?.classList.add('focused');
+            });
+            input.addEventListener('blur', () => {
+                input.closest('.form-group')?.classList.remove('focused');
+            });
+        });
+
+        // Animate contact cards on scroll
+        const contactCards = document.querySelectorAll('.contact-info-card');
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('animated');
+                    }, index * 150);
+                    cardObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        contactCards.forEach(card => {
+            card.classList.add('animate-on-scroll');
+            cardObserver.observe(card);
+        });
+    </script>
+</body>
+
+</html>

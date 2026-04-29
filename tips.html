@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kinh nghiệm du lịch - Mẹo hay, tips tiết kiệm và hướng dẫn du lịch hữu ích">
+    <title>Kinh Nghiệm Du Lịch - Du Lịch Muôn Nơi</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="container top-header__inner">
+            <div class="logo"><img src="https://img.icons8.com/color/48/paint-palette.png" alt="Logo"
+                    class="logo__icon"><span class="logo__text">Du Lịch Thế Giới</span><img
+                    src="https://img.icons8.com/color/24/paint-brush.png" alt="" class="logo__brush"></div>
+            <div class="hotline">
+                <div class="hotline__icon-wrap"><i class="fas fa-phone-alt hotline__icon"></i></div>
+                <div class="hotline__info"><span class="hotline__number">Phone: 0999000000</span><span
+                        class="hotline__sub">Gọi để được tư vấn ngay</span></div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav__list" id="navList">
+                <li class="nav__item"><a href="index.html" class="nav__link">TRANG CHỦ</a></li>
+                <li class="nav__item nav__item--dropdown"><a href="hotels.html" class="nav__link">KHÁCH SẠN <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="hotels.html#3sao">Khách sạn 3 sao</a></li>
+                        <li><a href="hotels.html#4sao">Khách sạn 4 sao</a></li>
+                        <li><a href="hotels.html#5sao">Khách sạn 5 sao</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="domestic.html" class="nav__link">DU LỊCH TRONG NƯỚC</a></li>
+                <li class="nav__item"><a href="international.html" class="nav__link">DU LỊCH NƯỚC NGOÀI</a></li>
+                <li class="nav__item"><a href="policy.html" class="nav__link">CHÍNH SÁCH CHUNG</a></li>
+                <li class="nav__item"><a href="tips.html" class="nav__link nav__link--active">KINH NGHIỆM DU LỊCH</a>
+                </li>
+                <li class="nav__item"><a href="about.html" class="nav__link">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <div class="page-banner__overlay"></div>
+        <div class="page-banner__content">
+            <h1 class="page-banner__title">Kinh Nghiệm Du Lịch</h1>
+            <p class="page-banner__breadcrumb"><a href="index.html">Trang chủ</a><i
+                    class="fas fa-chevron-right"></i><span>Kinh nghiệm du lịch</span></p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">BÀI VIẾT MỚI NHẤT</h2>
+            <div class="blog-grid">
+                <article class="blog-card blog-card--featured">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=500&fit=crop"
+                            alt="Du lịch tiết kiệm" class="blog-card__img">
+                        <div class="blog-card__category">Mẹo hay</div>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta">
+                            <span><i class="far fa-calendar-alt"></i> 25/04/2026</span>
+                            <span><i class="far fa-eye"></i> 2.5k lượt xem</span>
+                        </div>
+                        <h3 class="blog-card__title">10 Mẹo Du Lịch Tiết Kiệm Mà Vẫn Sang Chảnh</h3>
+                        <p class="blog-card__excerpt">Bí quyết để có chuyến du lịch đáng nhớ mà không lo "cháy túi". Từ
+                            cách đặt vé máy bay giá rẻ đến kinh nghiệm chọn khách sạn đẹp giá hời...</p>
+                        <a href="#" class="blog-card__readmore">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=280&fit=crop"
+                            alt="Đồ mang theo" class="blog-card__img">
+                        <div class="blog-card__category">Chuẩn bị</div>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta"><span><i class="far fa-calendar-alt"></i> 22/04/2026</span><span><i
+                                    class="far fa-eye"></i> 1.8k</span></div>
+                        <h3 class="blog-card__title">Checklist Đồ Cần Mang Khi Du Lịch Biển</h3>
+                        <p class="blog-card__excerpt">Danh sách chi tiết những vật dụng không thể thiếu cho chuyến nghỉ
+                            mát biển hoàn hảo...</p>
+                        <a href="#" class="blog-card__readmore">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624?w=400&h=280&fit=crop"
+                            alt="Ẩm thực" class="blog-card__img">
+                        <div class="blog-card__category">Ẩm thực</div>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta"><span><i class="far fa-calendar-alt"></i> 20/04/2026</span><span><i
+                                    class="far fa-eye"></i> 3.2k</span></div>
+                        <h3 class="blog-card__title">Top 15 Món Ăn Đường Phố Phải Thử Ở Việt Nam</h3>
+                        <p class="blog-card__excerpt">Từ phở, bánh mì đến bún chả, khám phá ẩm thực đường phố Việt Nam
+                            qua từng vùng miền...</p>
+                        <a href="#" class="blog-card__readmore">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=280&fit=crop"
+                            alt="Solo travel" class="blog-card__img">
+                        <div class="blog-card__category">Kinh nghiệm</div>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta"><span><i class="far fa-calendar-alt"></i> 18/04/2026</span><span><i
+                                    class="far fa-eye"></i> 1.5k</span></div>
+                        <h3 class="blog-card__title">Du Lịch Solo: Hướng Dẫn Cho Người Mới Bắt Đầu</h3>
+                        <p class="blog-card__excerpt">Những điều cần biết trước khi lên đường một mình, từ an toàn đến
+                            cách kết bạn...</p>
+                        <a href="#" class="blog-card__readmore">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=400&h=280&fit=crop"
+                            alt="Chụp ảnh" class="blog-card__img">
+                        <div class="blog-card__category">Tips</div>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta"><span><i class="far fa-calendar-alt"></i> 15/04/2026</span><span><i
+                                    class="far fa-eye"></i> 2.1k</span></div>
+                        <h3 class="blog-card__title">Bí Quyết Chụp Ảnh Đẹp Khi Đi Du Lịch</h3>
+                        <p class="blog-card__excerpt">Mẹo chụp ảnh bằng điện thoại và máy ảnh cho người không chuyên,
+                            lưu giữ khoảnh khắc đẹp...</p>
+                        <a href="#" class="blog-card__readmore">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=280&fit=crop"
+                            alt="Visa" class="blog-card__img">
+                        <div class="blog-card__category">Hướng dẫn</div>
+                    </div>
+                    <div class="blog-card__body">
+                        <div class="blog-card__meta"><span><i class="far fa-calendar-alt"></i> 12/04/2026</span><span><i
+                                    class="far fa-eye"></i> 4.1k</span></div>
+                        <h3 class="blog-card__title">Hướng Dẫn Xin Visa Du Lịch Các Nước Châu Á</h3>
+                        <p class="blog-card__excerpt">Thủ tục, hồ sơ và kinh nghiệm xin visa Nhật, Hàn, Đài Loan nhanh
+                            và dễ dàng...</p>
+                        <a href="#" class="blog-card__readmore">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+                <p class="footer__text">Dấu Chân Việt chuyên cung cấp các tour du lịch trong nước và nước ngoài với chất
+                    lượng dịch vụ tốt nhất.</p>
+                <div class="footer__social"><a href="#" class="footer__social-link"><i
+                            class="fab fa-facebook-f"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-instagram"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-youtube"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-twitter"></i></a></div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">LIÊN KẾT NHANH</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="domestic.html">Tour trong nước</a></li>
+                    <li><a href="international.html">Tour nước ngoài</a></li>
+                    <li><a href="tips.html">Kinh nghiệm du lịch</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">THÔNG TIN LIÊN HỆ</h3>
+                <ul class="footer__contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường Nguyễn Trãi, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone-alt"></i> 0336705749</li>
+                    <li><i class="fas fa-envelope"></i> anhvtlpk04697@gmail.com</li>
+                    <li><i class="far fa-clock"></i> T2 - T7: 8:00 - 17:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Dấu Chân Việt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>

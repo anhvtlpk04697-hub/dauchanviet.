@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thanh toán đặt tour - Dấu Chân Việt">
+    <title>Thanh Toán - Dấu Chân Việt</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="container top-header__inner">
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/paint-palette.png" alt="Logo" class="logo__icon">
+                <span class="logo__text">Dấu Chân Việt</span>
+                <img src="https://img.icons8.com/color/24/paint-brush.png" alt="" class="logo__brush">
+            </div>
+            <div class="hotline">
+                <div class="hotline__icon-wrap"><i class="fas fa-phone-alt hotline__icon"></i></div>
+                <div class="hotline__info"><span class="hotline__number">Phone: 0999000000</span><span
+                        class="hotline__sub">Gọi để được tư vấn ngay</span></div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container">
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav__list" id="navList">
+                <li class="nav__item"><a href="index.html" class="nav__link">TRANG CHỦ</a></li>
+                <li class="nav__item nav__item--dropdown">
+                    <a href="hotels.html" class="nav__link">KHÁCH SẠN <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="hotels.html#3sao">Khách sạn 3 sao</a></li>
+                        <li><a href="hotels.html#4sao">Khách sạn 4 sao</a></li>
+                        <li><a href="hotels.html#5sao">Khách sạn 5 sao</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a href="domestic.html" class="nav__link">DU LỊCH TRONG NƯỚC</a></li>
+                <li class="nav__item"><a href="international.html" class="nav__link">DU LỊCH NƯỚC NGOÀI</a></li>
+                <li class="nav__item"><a href="policy.html" class="nav__link">CHÍNH SÁCH CHUNG</a></li>
+                <li class="nav__item"><a href="tips.html" class="nav__link">KINH NGHIỆM DU LỊCH</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">GIỚI THIỆU</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <div class="page-banner__overlay"></div>
+        <div class="page-banner__content">
+            <h1 class="page-banner__title">Thanh Toán & Đặt Chỗ</h1>
+            <p class="page-banner__breadcrumb">
+                <a href="index.html">Trang chủ</a><i class="fas fa-chevron-right"></i>
+                <span>Thanh toán</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- CHECKOUT STEPS -->
+    <section class="checkout-section">
+        <div class="container">
+            <!-- Progress Steps -->
+            <div class="checkout-steps">
+                <div class="checkout-step active" data-step="1">
+                    <div class="checkout-step__icon"><i class="fas fa-info-circle"></i></div>
+                    <span>Thông tin</span>
+                </div>
+                <div class="checkout-step__line"></div>
+                <div class="checkout-step" data-step="2">
+                    <div class="checkout-step__icon"><i class="fas fa-credit-card"></i></div>
+                    <span>Thanh toán</span>
+                </div>
+                <div class="checkout-step__line"></div>
+                <div class="checkout-step" data-step="3">
+                    <div class="checkout-step__icon"><i class="fas fa-check-circle"></i></div>
+                    <span>Hoàn tất</span>
+                </div>
+            </div>
+
+            <div class="checkout-layout">
+                <!-- LEFT: Form -->
+                <div class="checkout-form-area">
+                    <!-- Step 1: Customer Info -->
+                    <div class="checkout-panel" id="step1Panel">
+                        <h2 class="checkout-panel__title"><i class="fas fa-user-edit"></i> Thông tin người đặt</h2>
+                        <form id="checkoutForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="ckLastName" class="form-label"><i class="fas fa-user"></i> Họ</label>
+                                    <input type="text" id="ckLastName" class="form-input" placeholder="Nguyễn" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ckFirstName" class="form-label"><i class="fas fa-user"></i> Tên</label>
+                                    <input type="text" id="ckFirstName" class="form-input" placeholder="Văn A" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="ckEmail" class="form-label"><i class="fas fa-envelope"></i>
+                                        Email</label>
+                                    <input type="email" id="ckEmail" class="form-input" placeholder="email@example.com"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ckPhone" class="form-label"><i class="fas fa-phone"></i> Số điện
+                                        thoại</label>
+                                    <input type="tel" id="ckPhone" class="form-input" placeholder="0912 345 678"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ckAddress" class="form-label"><i class="fas fa-map-marker-alt"></i> Địa
+                                    chỉ</label>
+                                <input type="text" id="ckAddress" class="form-input"
+                                    placeholder="Số nhà, đường, quận, thành phố">
+                            </div>
+                            <div class="form-row" id="tourExtraFields">
+                                <div class="form-group">
+                                    <label for="ckDate" class="form-label"><i class="fas fa-calendar-alt"></i> Ngày khởi
+                                        hành</label>
+                                    <input type="date" id="ckDate" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ckGuests" class="form-label"><i class="fas fa-users"></i> Số
+                                        người</label>
+                                    <select id="ckGuests" class="form-input">
+                                        <option value="1">1 người</option>
+                                        <option value="2" selected>2 người</option>
+                                        <option value="3">3 người</option>
+                                        <option value="4">4 người</option>
+                                        <option value="5">5 người</option>
+                                        <option value="6">6 người</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row" id="hotelExtraFields" style="display:none;">
+                                <div class="form-group">
+                                    <label for="ckCheckin" class="form-label"><i class="fas fa-calendar-plus"></i>
+                                        Check-in</label>
+                                    <input type="date" id="ckCheckin" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ckCheckout" class="form-label"><i class="fas fa-calendar-minus"></i>
+                                        Check-out</label>
+                                    <input type="date" id="ckCheckout" class="form-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ckNote" class="form-label"><i class="fas fa-sticky-note"></i> Ghi
+                                    chú</label>
+                                <textarea id="ckNote" class="form-input form-textarea"
+                                    placeholder="Yêu cầu đặc biệt (nếu có)..." rows="3"></textarea>
+                            </div>
+                            <button type="button" class="checkout-next-btn" id="toStep2Btn">
+                                Tiếp tục thanh toán <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Step 2: Payment -->
+                    <div class="checkout-panel" id="step2Panel" style="display:none;">
+                        <h2 class="checkout-panel__title"><i class="fas fa-credit-card"></i> Phương thức thanh toán</h2>
+                        <div class="payment-methods">
+                            <label class="payment-method active">
+                                <input type="radio" name="paymentMethod" value="bank" checked>
+                                <div class="payment-method__content">
+                                    <i class="fas fa-university"></i>
+                                    <div>
+                                        <h4>Chuyển khoản ngân hàng</h4>
+                                        <p>Chuyển khoản qua tài khoản ngân hàng</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="paymentMethod" value="momo">
+                                <div class="payment-method__content">
+                                    <i class="fas fa-mobile-alt" style="color:#ae2070;"></i>
+                                    <div>
+                                        <h4>Ví MoMo</h4>
+                                        <p>Thanh toán qua ví điện tử MoMo</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="paymentMethod" value="card">
+                                <div class="payment-method__content">
+                                    <i class="fab fa-cc-visa" style="color:#1a1f71;"></i>
+                                    <div>
+                                        <h4>Thẻ tín dụng / Ghi nợ</h4>
+                                        <p>Visa, Mastercard, JCB</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="paymentMethod" value="office">
+                                <div class="payment-method__content">
+                                    <i class="fas fa-building" style="color:#4caf50;"></i>
+                                    <div>
+                                        <h4>Thanh toán tại văn phòng</h4>
+                                        <p>123 Đường Nguyễn Trãi, Quận 1, TP.HCM</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Bank Transfer Info (shown by default) -->
+                        <div class="bank-info" id="bankInfo">
+                            <h4><i class="fas fa-info-circle"></i> Thông tin chuyển khoản</h4>
+                            <div class="bank-info__details">
+                                <p><strong>Ngân hàng:</strong> Vietcombank</p>
+                                <p><strong>Số tài khoản:</strong> 1047012769</p>
+                                <p><strong>Chủ tài khoản:</strong> Vũ Thị Lâm Anh</p>
+                                <p><strong>Nội dung CK:</strong> <span id="bankTransferContent">DCV_[Tên]_[SĐT]</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="form-checkbox" style="margin: 20px 0;">
+                            <input type="checkbox" id="agreeCheckout" required>
+                            <label for="agreeCheckout">
+                                Tôi đồng ý với <a href="policy.html" class="form-link">Chính sách chung</a> và <a
+                                    href="policy.html" class="form-link">Điều khoản dịch vụ</a>
+                            </label>
+                        </div>
+
+                        <div class="checkout-btn-group">
+                            <button type="button" class="checkout-back-btn" id="backToStep1">
+                                <i class="fas fa-arrow-left"></i> Quay lại
+                            </button>
+                            <button type="button" class="checkout-submit-btn" id="submitOrder">
+                                <i class="fas fa-lock"></i> XÁC NHẬN ĐẶT CHỖ
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Success -->
+                    <div class="checkout-panel" id="step3Panel" style="display:none;">
+                        <div class="checkout-success">
+                            <div class="checkout-success__icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h2>Đặt chỗ thành công! 🎉</h2>
+                            <p>Cảm ơn bạn đã tin tưởng Dấu Chân Việt. Chúng tôi sẽ liên hệ xác nhận trong vòng 24h.</p>
+                            <div class="checkout-success__order" id="orderSummary"></div>
+                            <div class="checkout-success__actions">
+                                <a href="index.html" class="checkout-success__btn checkout-success__btn--home">
+                                    <i class="fas fa-home"></i> Về trang chủ
+                                </a>
+                                <a href="profile.html" class="checkout-success__btn checkout-success__btn--profile">
+                                    <i class="fas fa-user"></i> Xem hồ sơ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Order Summary -->
+                <div class="checkout-sidebar" id="checkoutSidebar">
+                    <!-- JS will populate -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+                <p class="footer__text">Thiết Kế Web Du Lịch chuyên cung cấp các tour du lịch trong nước và nước ngoài
+                    với chất lượng dịch vụ tốt nhất.</p>
+                <div class="footer__social"><a href="#" class="footer__social-link"><i
+                            class="fab fa-facebook-f"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-instagram"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-youtube"></i></a><a href="#" class="footer__social-link"><i
+                            class="fab fa-twitter"></i></a></div>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">LIÊN KẾT NHANH</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="domestic.html">Tour trong nước</a></li>
+                    <li><a href="international.html">Tour nước ngoài</a></li>
+                    <li><a href="tips.html">Kinh nghiệm du lịch</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__heading">THÔNG TIN LIÊN HỆ</h3>
+                <ul class="footer__contact">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                    <li><i class="fas fa-phone-alt"></i> 0999 000 000</li>
+                    <li><i class="fas fa-envelope"></i> info@thietkeweb.vn</li>
+                    <li><i class="far fa-clock"></i> T2 - T7: 8:00 - 17:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Dấu Chân Việt. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="tour-data.js"></script>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const type = params.get('type'); // 'tour' or 'hotel'
+        const itemId = params.get('id');
+        const roomName = params.get('room');
+        const roomPrice = parseInt(params.get('price')) || 0;
+
+        let itemData = null;
+        let unitPrice = 0;
+        let itemLabel = '';
+
+        if (type === 'tour' && TOUR_DATA[itemId]) {
+            itemData = TOUR_DATA[itemId];
+            unitPrice = itemData.price;
+            itemLabel = itemData.name;
+            document.getElementById('hotelExtraFields').style.display = 'none';
+            document.getElementById('tourExtraFields').style.display = '';
+        } else if (type === 'hotel' && HOTEL_DATA[itemId]) {
+            itemData = HOTEL_DATA[itemId];
+            unitPrice = roomPrice || itemData.price;
+            itemLabel = itemData.name + (roomName ? ' - ' + roomName : '');
+            document.getElementById('tourExtraFields').style.display = 'none';
+            document.getElementById('hotelExtraFields').style.display = '';
+        }
+
+        // Auto-fill from logged-in user
+        const currentUser = Auth.getCurrentUser();
+        if (currentUser) {
+            document.getElementById('ckLastName').value = currentUser.lastName || '';
+            document.getElementById('ckFirstName').value = currentUser.firstName || '';
+            document.getElementById('ckEmail').value = currentUser.email || '';
+            document.getElementById('ckPhone').value = currentUser.phone || '';
+        }
+
+        // Set min dates
+        const today = new Date().toISOString().split('T')[0];
+        const dateInputs = document.querySelectorAll('input[type="date"]');
+        dateInputs.forEach(input => input.min = today);
+
+        // Render sidebar
+        function updateSidebar() {
+            const guests = parseInt(document.getElementById('ckGuests')?.value) || 1;
+            let nights = 1;
+            if (type === 'hotel') {
+                const checkin = document.getElementById('ckCheckin')?.value;
+                const checkout = document.getElementById('ckCheckout')?.value;
+                if (checkin && checkout) {
+                    nights = Math.max(1, Math.round((new Date(checkout) - new Date(checkin)) / 86400000));
+                }
+            }
+            const quantity = type === 'tour' ? guests : nights;
+            const total = unitPrice * quantity;
+
+            document.getElementById('checkoutSidebar').innerHTML = `
+                <div class="order-summary-card">
+                    <h3 class="order-summary-card__title"><i class="fas fa-shopping-bag"></i> Tóm tắt đơn hàng</h3>
+                    ${itemData ? `
+                        <div class="order-summary-card__item">
+                            <img src="${itemData.gallery ? itemData.gallery[0] : itemData.image}" alt="${itemData.name}">
+                            <div>
+                                <h4>${itemLabel}</h4>
+                                <p>${type === 'tour' ? itemData.duration : itemData.location}</p>
+                            </div>
+                        </div>
+                    ` : '<p style="color:var(--color-gray);">Không tìm thấy sản phẩm</p>'}
+                    <div class="order-summary-card__rows">
+                        <div class="order-summary-card__row">
+                            <span>Đơn giá</span>
+                            <span>${formatPrice(unitPrice)}</span>
+                        </div>
+                        <div class="order-summary-card__row">
+                            <span>${type === 'tour' ? 'Số người' : 'Số đêm'}</span>
+                            <span>${quantity}</span>
+                        </div>
+                        <div class="order-summary-card__row order-summary-card__row--total">
+                            <span>Tổng cộng</span>
+                            <span>${formatPrice(total)}</span>
+                        </div>
+                    </div>
+                    <div class="order-summary-card__secure">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Thanh toán an toàn & bảo mật</span>
+                    </div>
+                </div>
+            `;
+        }
+        updateSidebar();
+
+        // Update sidebar when guests or dates change
+        document.getElementById('ckGuests')?.addEventListener('change', updateSidebar);
+        document.getElementById('ckCheckin')?.addEventListener('change', updateSidebar);
+        document.getElementById('ckCheckout')?.addEventListener('change', updateSidebar);
+
+        // Payment method toggle
+        document.querySelectorAll('.payment-method').forEach(method => {
+            method.addEventListener('click', () => {
+                document.querySelectorAll('.payment-method').forEach(m => m.classList.remove('active'));
+                method.classList.add('active');
+                const val = method.querySelector('input').value;
+                document.getElementById('bankInfo').style.display = val === 'bank' ? 'block' : 'none';
+            });
+        });
+
+        // Step navigation
+        function goToStep(step) {
+            document.querySelectorAll('.checkout-step').forEach(s => {
+                const sNum = parseInt(s.dataset.step);
+                s.classList.toggle('active', sNum <= step);
+                s.classList.toggle('completed', sNum < step);
+            });
+            document.querySelectorAll('.checkout-step__line').forEach((line, i) => {
+                line.classList.toggle('active', i < step - 1);
+            });
+            document.getElementById('step1Panel').style.display = step === 1 ? 'block' : 'none';
+            document.getElementById('step2Panel').style.display = step === 2 ? 'block' : 'none';
+            document.getElementById('step3Panel').style.display = step === 3 ? 'block' : 'none';
+            if (step === 3) {
+                document.getElementById('checkoutSidebar').style.display = 'none';
+            }
+            window.scrollTo({ top: 300, behavior: 'smooth' });
+        }
+
+        document.getElementById('toStep2Btn').addEventListener('click', () => {
+            // Validate
+            const form = document.getElementById('checkoutForm');
+            const requiredFields = form.querySelectorAll('[required]');
+            let valid = true;
+            requiredFields.forEach(f => {
+                if (!f.value.trim()) {
+                    f.style.borderColor = 'var(--color-red)';
+                    valid = false;
+                } else {
+                    f.style.borderColor = '';
+                }
+            });
+            if (!valid) {
+                showAuthNotification('Vui lòng điền đầy đủ thông tin!', 'error');
+                return;
+            }
+            // Update bank transfer content
+            const name = document.getElementById('ckLastName').value + document.getElementById('ckFirstName').value;
+            const phone = document.getElementById('ckPhone').value;
+            document.getElementById('bankTransferContent').textContent = `DCV_${name}_${phone}`;
+            goToStep(2);
+        });
+
+        document.getElementById('backToStep1').addEventListener('click', () => goToStep(1));
+
+        document.getElementById('submitOrder').addEventListener('click', () => {
+            if (!document.getElementById('agreeCheckout').checked) {
+                showAuthNotification('Vui lòng đồng ý với điều khoản dịch vụ!', 'error');
+                return;
+            }
+
+            const btn = document.getElementById('submitOrder');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang xử lý...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const guests = parseInt(document.getElementById('ckGuests')?.value) || 1;
+                let nights = 1;
+                if (type === 'hotel') {
+                    const cin = document.getElementById('ckCheckin')?.value;
+                    const cout = document.getElementById('ckCheckout')?.value;
+                    if (cin && cout) nights = Math.max(1, Math.round((new Date(cout) - new Date(cin)) / 86400000));
+                }
+                const qty = type === 'tour' ? guests : nights;
+                const total = unitPrice * qty;
+                const orderCode = 'DCV' + Date.now().toString().slice(-8);
+
+                // Send email notification
+                fetch('https://formsubmit.co/ajax/anhvtlpk04697@gmail.com', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify({
+                        _subject: '🛒 Đơn đặt mới #' + orderCode + ': ' + itemLabel,
+                        'Mã đơn': orderCode,
+                        'Loại': type === 'tour' ? 'Tour du lịch' : 'Khách sạn',
+                        'Sản phẩm': itemLabel,
+                        'Họ tên': document.getElementById('ckLastName').value + ' ' + document.getElementById('ckFirstName').value,
+                        'Email': document.getElementById('ckEmail').value,
+                        'SĐT': document.getElementById('ckPhone').value,
+                        'Số lượng': qty + (type === 'tour' ? ' người' : ' đêm'),
+                        'Tổng tiền': formatPrice(total),
+                        'Thanh toán': document.querySelector('input[name="paymentMethod"]:checked').value,
+                        'Ghi chú': document.getElementById('ckNote').value || 'Không có',
+                        _template: 'table'
+                    })
+                }).catch(() => { });
+
+                // Show success
+                document.getElementById('orderSummary').innerHTML = `
+                    <div class="order-confirm-details">
+                        <div class="order-confirm-row"><span>Mã đơn hàng</span><strong>${orderCode}</strong></div>
+                        <div class="order-confirm-row"><span>${type === 'tour' ? 'Tour' : 'Khách sạn'}</span><strong>${itemLabel}</strong></div>
+                        <div class="order-confirm-row"><span>Tổng thanh toán</span><strong class="highlight">${formatPrice(total)}</strong></div>
+                    </div>
+                `;
+                goToStep(3);
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>
